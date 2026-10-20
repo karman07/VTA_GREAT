@@ -1,0 +1,3 @@
+answerable: 99 Counter({'factual': 25, 'conceptual': 25, 'analytical': 25, 'problem_solving': 24})
+assignment: 30
+out-of-scope: 30 (from 48 candidates)

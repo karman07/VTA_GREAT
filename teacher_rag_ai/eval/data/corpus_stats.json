@@ -1,0 +1,22 @@
+{
+  "n_chunks": 372,
+  "by_type": {
+    "pdf_text": 295,
+    "pdf_image": 77
+  },
+  "n_image_chunks": 77,
+  "n_docs": 11,
+  "n_assign": 2,
+  "n_decks": 8,
+  "nq": {
+    "answerable": 99,
+    "oos": 30,
+    "assign": 30
+  },
+  "citation_diagnosis": {
+    "verbatim": 128,
+    "paraphrase_or_wrong(<80%)": 4,
+    "near_verbatim(>=80%)": 4,
+    "verbatim_ignoring_punct_ws": 14
+  }
+}

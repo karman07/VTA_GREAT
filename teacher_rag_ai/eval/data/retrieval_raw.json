@@ -1,0 +1,794 @@
+[
+  {
+    "id": "A000",
+    "type": "factual",
+    "dense_rank": null,
+    "rerank_rank": null,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A001",
+    "type": "conceptual",
+    "dense_rank": 7,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A002",
+    "type": "analytical",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A003",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A004",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A005",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A006",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A007",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A008",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A009",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A010",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A011",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A012",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A013",
+    "type": "conceptual",
+    "dense_rank": 4,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A014",
+    "type": "analytical",
+    "dense_rank": 4,
+    "rerank_rank": 7,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A015",
+    "type": "problem_solving",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A016",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A017",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A018",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A019",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A020",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A021",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A022",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A023",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A024",
+    "type": "factual",
+    "dense_rank": 4,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A025",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A026",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A027",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A028",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A029",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A030",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A031",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A032",
+    "type": "factual",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A033",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A034",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A035",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A036",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 8,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A037",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A038",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A039",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A040",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A041",
+    "type": "conceptual",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A042",
+    "type": "analytical",
+    "dense_rank": 2,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A043",
+    "type": "problem_solving",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A044",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A045",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A046",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A047",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A048",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A049",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A050",
+    "type": "analytical",
+    "dense_rank": 3,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A051",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A052",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A053",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A054",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A055",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A056",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A057",
+    "type": "conceptual",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A058",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A059",
+    "type": "problem_solving",
+    "dense_rank": 3,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A060",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A061",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A062",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 4,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A063",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A064",
+    "type": "factual",
+    "dense_rank": 5,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A065",
+    "type": "conceptual",
+    "dense_rank": 4,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A066",
+    "type": "analytical",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A067",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A068",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A069",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A070",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A071",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A072",
+    "type": "factual",
+    "dense_rank": 5,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A073",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A074",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A075",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A076",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A077",
+    "type": "conceptual",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A078",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A079",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A080",
+    "type": "factual",
+    "dense_rank": 3,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A081",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A082",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A083",
+    "type": "problem_solving",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A084",
+    "type": "factual",
+    "dense_rank": 2,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A085",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A086",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A087",
+    "type": "problem_solving",
+    "dense_rank": 4,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A088",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A089",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 6,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A090",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A091",
+    "type": "problem_solving",
+    "dense_rank": 10,
+    "rerank_rank": 20,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A092",
+    "type": "factual",
+    "dense_rank": 2,
+    "rerank_rank": 2,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A093",
+    "type": "conceptual",
+    "dense_rank": 3,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A094",
+    "type": "analytical",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A095",
+    "type": "problem_solving",
+    "dense_rank": 2,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A096",
+    "type": "factual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A097",
+    "type": "conceptual",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  },
+  {
+    "id": "A098",
+    "type": "analytical",
+    "dense_rank": 1,
+    "rerank_rank": 1,
+    "rerank_error": null,
+    "candidates": 20
+  }
+]

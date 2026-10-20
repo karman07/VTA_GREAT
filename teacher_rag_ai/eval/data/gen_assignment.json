@@ -1,0 +1,602 @@
+[
+  {
+    "id": "S000",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The question asks to prove that if $\\sec \\theta + \\tan \\theta = p$, then $\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$ (Source 1).\n\nTo prove this identity, we can start with the given equation:\n$\\sec \\theta + \\tan \\theta = p$\n\nWe know the trigonometric identity $\\sec^2 \\theta - \\tan^2 \\theta = 1$. This can be factored as a difference of squares:\n$(\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan \\theta) = 1$\n\nSubstitute $p$ for $(\\sec \\theta + \\tan \\theta)$:\n$(\\sec \\theta - \\tan \\theta)(p) = 1$\n\nNow, we can express $(\\sec \\theta - \\tan \\theta)$ in terms of $p$:\n$\\sec \\theta - \\tan \\theta = \\frac{1}{p}$\n\nWe now have a system of two equations:\n1. $\\sec \\theta + \\tan \\theta = p$\n2. $\\sec \\theta - \\tan \\theta = \\frac{1}{p}$\n\nTo find $\\tan \\theta$, we can subtract the second equation from the first:\n$(\\sec \\theta + \\tan \\theta) - (\\sec \\theta - \\tan \\theta) = p - \\frac{1}{p}$\n$2 \\tan \\theta = p - \\frac{1}{p}$\n$2 \\tan \\theta = \\frac{p^2 - 1}{p}$\n$\\tan \\theta = \\frac{p^2 - 1}{2p}$\n\nTo find $\\sin \\theta$, we can use the relationship $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$. We also know that $\\sec \\theta = \\frac{1}{\\cos \\theta}$.\n\nLet's add the two equations to find $\\sec \\theta$:\n$(\\sec \\theta + \\tan \\theta) + (\\sec \\theta - \\tan \\theta) = p + \\frac{1}{p}$\n$2 \\sec \\theta = p + \\frac{1}{p}$\n$2 \\sec \\theta = \\frac{p^2 + 1}{p}$\n$\\sec \\theta = \\frac{p^2 + 1}{2p}$\n\nSince $\\sec \\theta = \\frac{1}{\\cos \\theta}$, we have:\n$\\cos \\theta = \\frac{2p}{p^2 + 1}$\n\nNow we can find $\\sin \\theta$ using the identity $\\sin^2 \\theta + \\cos^2 \\theta = 1$, or by using $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$:\n$\\sin \\theta = \\tan \\theta \\cdot \\cos \\theta$\n$\\sin \\theta = \\left(\\frac{p^2 - 1}{2p}\\right) \\cdot \\left(\\frac{2p}{p^2 + 1}\\right)$\n\nThe $2p$ terms cancel out, leaving:\n$\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$\n\nThis completes the proof.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The problem asks to prove that $\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$, given that $\\sec \\theta + \\tan \\theta = p$. This is a problem from the Introduction to Trigonometry section of your mathematics class. To solve this, you will need to use trigonometric identities and algebraic manipulation.\n\nDo you recall any fundamental trigonometric identities that relate $\\sec \\theta$ and $\\tan \\theta$?",
+        "assignment_mode": true,
+        "leaked_final_answer": true,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S001",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "To find the value of $\\sin^4\\theta + \\cos^4\\theta$ given that $\\sin\\theta - \\cos\\theta = 0$, we first need to determine the relationship between $\\sin\\theta$ and $\\cos\\theta$.\n\nFrom the given equation, $\\sin\\theta - \\cos\\theta = 0$, we can add $\\cos\\theta$ to both sides to get:\n$\\sin\\theta = \\cos\\theta$\n\nNow, we can divide both sides by $\\cos\\theta$ (assuming $\\cos\\theta \\neq 0$). If $\\cos\\theta = 0$, then $\\sin\\theta$ would also have to be 0, which is impossible since $\\sin^2\\theta + \\cos^2\\theta = 1$. Therefore, $\\cos\\theta \\neq 0$.\n$\\frac{\\sin\\theta}{\\cos\\theta} = 1$\nThis implies that $\\tan\\theta = 1$.\n\nWe know that $\\tan\\theta = 1$ when $\\theta = 45^\\circ$ (or $\\frac{\\pi}{4}$ radians) in the first quadrant, or $225^\\circ$ (or $\\frac{5\\pi}{4}$ radians) in the third quadrant, and so on.\n\nIf $\\tan\\theta = 1$, then $\\sin\\theta = \\cos\\theta$. Let's consider the case where $\\sin\\theta = \\cos\\theta$.\nWe can use the identity $\\sin^2\\theta + \\cos^2\\theta = 1$.\nSince $\\sin\\theta = \\cos\\theta$, we can substitute $\\sin\\theta$ for $\\cos\\theta$:\n$\\sin^2\\theta + \\sin^2\\theta = 1$\n$2\\sin^2\\theta = 1$\n$\\sin^2\\theta = \\frac{1}{2}$\n\nSimilarly, substituting $\\cos\\theta$ for $\\sin\\theta$:\n$\\cos^2\\theta + \\cos^2\\theta = 1$\n$2\\cos^2\\theta = 1$\n$\\cos^2\\theta = \\frac{1}{2}$\n\nNow we need to find the value of $\\sin^4\\theta + \\cos^4\\theta$.\nWe can rewrite this as $(\\sin^2\\theta)^2 + (\\cos^2\\theta)^2$.\nSubstituting the values we found for $\\sin^2\\theta$ and $\\cos^2\\theta$:\n$\\sin^4\\theta + \\cos^4\\theta = \\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^2$\n$\\sin^4\\theta + \\cos^4\\theta = \\frac{1}{4} + \\frac{1}{4}$\n$\\sin^4\\theta + \\cos^4\\theta = \\frac{2}{4}$\n$\\sin^4\\theta + \\cos^4\\theta = \\frac{1}{2}$\n\nThis problem is similar to evaluating expressions when $\\sin\\theta = \\cos\\theta$, which occurs when $\\tan\\theta = 1$. The value of $\\sin^4\\theta + \\cos^4\\theta$ is $\\frac{1}{2}$ when $\\sin\\theta - \\cos\\theta = 0$ (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This question asks you to find the value of a trigonometric expression, $\\sin^4\\theta + \\cos^4\\theta$, given a specific condition, $\\sin \\theta - \\cos \\theta = 0$.\n\nTo approach this problem, you'll need to use the given condition to determine the value of $\\theta$ or the relationship between $\\sin \\theta$ and $\\cos \\theta$. Then, you can substitute this information into the expression you need to evaluate.\n\nThe core concepts involved here are:\n1.  **Solving trigonometric equations:** Understanding how to solve an equation like $\\sin \\theta - \\cos \\theta = 0$.\n2.  **Trigonometric identities:** Utilizing fundamental identities to simplify expressions.\n3.  **Substitution:** Replacing parts of an expression with equivalent values or relationships derived from the given information.\n\nLet's focus on the condition $\\sin \\theta - \\cos \\theta = 0$. What does this tell us about the relationship between $\\sin \\theta$ and $\\cos \\theta$?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S002",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "The value of x for the given system of equations is 2.\n\nTo solve this, we can use the method of elimination. We have the two equations:\n1.  $2x + y = 5$\n2.  $x + y = 3$\n\nSubtract equation (2) from equation (1):\n$(2x + y) - (x + y) = 5 - 3$\n$2x + y - x - y = 2$\n$x = 2$\n\nTherefore, $x = 2$. (Source 1)",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This question asks you to find the value of $x$ given a system of two linear equations:\n1. $2x + y = 5$\n2. $x + y = 3$\n\nTo solve this, you need to determine the value of $x$ that satisfies both equations simultaneously.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S003",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The question asks to find the value of $2 \\tan^2 A + \\sin^2 A - 1$ given that $\\sin A = \\cos A$.\n\nTo solve this, we first determine the value of $A$ for which $\\sin A = \\cos A$. This equality holds true when $A = 45^\\circ$ (or $\\frac{\\pi}{4}$ radians) in the first quadrant, as $\\sin 45^\\circ = \\frac{1}{\\sqrt{2}}$ and $\\cos 45^\\circ = \\frac{1}{\\sqrt{2}}$.\n\nNow, we can find the value of $\\tan A$ when $A = 45^\\circ$.\n$\\tan A = \\frac{\\sin A}{\\cos A}$\nSince $\\sin A = \\cos A$, we have $\\tan A = 1$.\n\nNext, we substitute $\\tan A = 1$ and $\\sin A = \\frac{1}{\\sqrt{2}}$ into the expression $2 \\tan^2 A + \\sin^2 A - 1$:\n$2 (\\tan A)^2 + (\\sin A)^2 - 1$\n$2 (1)^2 + \\left(\\frac{1}{\\sqrt{2}}\\right)^2 - 1$\n$2 (1) + \\frac{1}{2} - 1$\n$2 + \\frac{1}{2} - 1$\n\nNow, we perform the arithmetic:\n$2 - 1 + \\frac{1}{2}$\n$1 + \\frac{1}{2}$\n$\\frac{2}{2} + \\frac{1}{2} = \\frac{3}{2}$\n\nTherefore, the value of $2 \\tan^2 A + \\sin^2 A - 1$ is $\\frac{3}{2}$.\n\nThis problem is found within the \"Short Answer Questions – I\" section of the trigonometry material (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This question asks you to find the value of the expression $2 \\tan^2 A + \\sin^2 A - 1$, given the condition that $\\sin A = \\cos A$.\n\nTo approach this problem, you'll need to use your knowledge of trigonometric identities and relationships. The core of the problem lies in understanding what the condition $\\sin A = \\cos A$ implies about the angle $A$, and how that can be used to simplify the target expression.\n\nYou should consider:\n*   What does $\\sin A = \\cos A$ tell us about the angle $A$?\n*   How can you find the value of $\\tan A$ and $\\sin A$ from this condition?\n*   Once you have these values, how can you substitute them into the expression $2 \\tan^2 A + \\sin^2 A - 1$ to find its numerical value?\n\nThe provided course materials contain this question and related trigonometric concepts.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S004",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "This problem involves finding the dimensions (length and breadth) of a rectangle based on how its area changes under different modifications to its length and breadth. We can set up a system of linear equations to solve this.\n\nLet $L$ be the original length of the rectangle and $B$ be the original breadth of the rectangle.\nThe original area of the rectangle is $A = L \\times B$.\n\nWe are given two scenarios:\n\n**Scenario 1:**\nThe area is reduced by 9 sq. units if the length is decreased by 5 and the breadth is increased by 3.\nNew length = $L - 5$\nNew breadth = $B + 3$\nNew area = $(L - 5)(B + 3)$\n\nAccording to the problem, this new area is $A - 9$.\nSo, $(L - 5)(B + 3) = LB - 9$.\nExpanding the left side:\n$LB + 3L - 5B - 15 = LB - 9$\nSubtract $LB$ from both sides:\n$3L - 5B - 15 = -9$\nAdd 15 to both sides:\n$3L - 5B = 6$  (Equation 1)\n\n**Scenario 2:**\nThe area increases by 67 sq. units if the length increases by 3 and the breadth increases by 2.\nNew length = $L + 3$\nNew breadth = $B + 2$\nNew area = $(L + 3)(B + 2)$\n\nAccording to the problem, this new area is $A + 67$.\nSo, $(L + 3)(B + 2) = LB + 67$.\nExpanding the left side:\n$LB + 2L + 3B + 6 = LB + 67$\nSubtract $LB$ from both sides:\n$2L + 3B + 6 = 67$\nSubtract 6 from both sides:\n$2L + 3B = 61$  (Equation 2)\n\nNow we have a system of two linear equations with two variables:\n1) $3L - 5B = 6$\n2) $2L + 3B = 61$\n\nWe can solve this system using either the elimination method or the substitution method. Let's use the elimination method.\n\nTo eliminate $B$, we can multiply Equation 1 by 3 and Equation 2 by 5:\n$3 \\times (3L - 5B = 6) \\implies 9L - 15B = 18$\n$5 \\times (2L + 3B = 61) \\implies 10L + 15B = 305$\n\nNow, add the two modified equations:\n$(9L - 15B) + (10L + 15B) = 18 + 305$\n$19L = 323$\n\nSolve for $L$:\n$L = \\frac{323}{19}$\n$L = 17$\n\nNow substitute the value of $L$ into either Equation 1 or Equation 2 to find $B$. Let's use Equation 2:\n$2L + 3B = 61$\n$2(17) + 3B = 61$\n$34 + 3B = 61$\nSubtract 34 from both sides:\n$3B = 61 - 34$\n$3B = 27$\nSolve for $B$:\n$B = \\frac{27}{3}$\n$B = 9$\n\nSo, the dimensions of the rectangle are length = 17 units and breadth = 9 units.\n\nLet's verify these dimensions with the original conditions:\nOriginal Area = $17 \\times 9 = 153$ sq. units.\n\nScenario 1: Length decreased by 5 (17 - 5 = 12), breadth increased by 3 (9 + 3 = 12).\nNew Area = $12 \\times 12 = 144$ sq. units.\nArea reduction = $153 - 144 = 9$ sq. units. This matches the condition.\n\nScenario 2: Length increased by 3 (17 + 3 = 20), breadth increased by 2 (9 + 2 = 11).\nNew Area = $20 \\times 11 = 220$ sq. units.\nArea increase = $220 - 153 = 67$ sq. units. This also matches the condition.\n\nTherefore, the dimensions of the rectangle are 17 units and 9 units.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to find the dimensions (length and breadth) of a rectangle based on two scenarios that alter its area. We will need to translate these scenarios into a system of linear equations and then solve for the unknown dimensions.\n\nThe core concepts involved are:\n1.  **Area of a rectangle:** The area ($A$) of a rectangle is calculated by multiplying its length ($l$) and breadth ($b$), i.e., $A = l \\times b$.\n2.  **Forming linear equations:** We need to represent the given information as algebraic equations involving the length and breadth.\n3.  **Solving a system of linear equations:** Once we have a pair of linear equations, we will solve them to find the values of length and breadth.\n\nThe problem provides two conditions:\n*   **Condition 1:** If the length is decreased by 5 units and the breadth is increased by 3 units, the area is reduced by 9 sq. units.\n*   **Condition 2:** If the length is increased by 3 units and the breadth is increased by 2 units, the area is increased by 67 sq. units.\n\nOur goal is to find the original length and breadth of the rectangle.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S005",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "I can help you with that! To find the number of students in the class, we need to set up a system of linear equations based on the information provided.\n\nLet:\n*   'r' be the original number of rows.\n*   's' be the original number of students in each row.\n\nThe total number of students in the class is given by the product of the number of rows and the number of students per row, i.e., Total Students = r * s.\n\nFrom the problem statement, we have two conditions:\n\n1.  \"If 3 students are extra in a row, there is 1 row less.\"\n    This translates to: (s + 3) * (r - 1) = r * s\n\n2.  \"If 3 students are fewer in a row, there are 2 rows more.\"\n    This translates to: (s - 3) * (r + 2) = r * s\n\nLet's expand these equations:\n\n**Equation 1:**\n(s + 3)(r - 1) = rs\nsr - s + 3r - 3 = rs\n-s + 3r - 3 = 0\n3r - s = 3  (Equation A)\n\n**Equation 2:**\n(s - 3)(r + 2) = rs\nsr + 2s - 3r - 6 = rs\n2s - 3r - 6 = 0\n-3r + 2s = 6 (Equation B)\n\nNow we have a system of two linear equations with two variables:\n1.  3r - s = 3\n2.  -3r + 2s = 6\n\nWe can solve this system using the elimination method. Notice that the coefficients of 'r' are opposites (3 and -3). Adding Equation A and Equation B will eliminate 'r':\n\n(3r - s) + (-3r + 2s) = 3 + 6\n3r - s - 3r + 2s = 9\ns = 9\n\nNow that we have the value of 's', we can substitute it back into either Equation A or Equation B to find 'r'. Let's use Equation A:\n\n3r - s = 3\n3r - 9 = 3\n3r = 3 + 9\n3r = 12\nr = 12 / 3\nr = 4\n\nSo, the original number of rows is 4, and the original number of students per row is 9.\n\nThe total number of students in the class is:\nTotal Students = r * s = 4 * 9 = 36\n\nTherefore, the number of students in the class is 36.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "I understand you're pressed for time, but I'm here to help you understand the concepts so you can solve the problem yourself. Providing the final answer wouldn't be beneficial for your learning.\n\nThe problem asks us to find the total number of students in a class based on two scenarios describing how they are arranged in rows. We need to determine the number of students per row and the number of rows, and then calculate the total number of students.\n\nThis problem can be effectively solved by setting up a system of linear equations. Let's define variables to represent the unknown quantities.\n\nWhat variables do you think would be appropriate to represent the number of students per row and the number of rows? Once we have those, we can translate the given conditions into equations.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S006",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The provided course materials contain multiple questions labeled as Q24, each pertaining to different topics. To provide the correct answer, please specify which Q24 you are referring to.\n\nFor instance, are you asking about:\n\n*   **Q24 from \"Linear Equations in Two Variables\"**: This question involves solving a system of equations related to a boat's travel upstream and downstream, or a problem about incomes and expenditures. (Source 1)\n*   **Q24 from \"Introduction to Trigonometry\"**: This question could be about finding angles A and B given values of tan(A + B) and tan(A - B), or proving a trigonometric identity involving cosA and sinA. (Source 2, Source 5)\n\nPlease clarify which Q24 you need assistance with.",
+        "assignment_mode": false,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The provided course materials contain multiple questions labeled as Q24, each from a different topic. To help you, please specify which Q24 you are referring to. For example, are you asking about:\n\n*   A problem involving linear equations in two variables, specifically related to a boat's travel upstream and downstream? (Source 1)\n*   A trigonometry problem asking to find angles A and B given values of tan(A + B) and tan(A - B)? (Source 2)\n*   A trigonometry problem involving proving an identity related to `cosA + sinA = √2 cosA`? (Source 2)\n*   A trigonometry problem asking to prove the identity `(1 + tan²A) / (1 + cot²A) = tan²A`? (Source 2, Source 5)\n\nOnce you clarify which Q24 you are interested in, I can provide a more focused explanation.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S007",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "To solve this problem, we need to find the values of sin A, cos C, cos A, and sin C given that in a right triangle ABC, angle B is 90 degrees and tan A = 1/√3.\n\nFirst, let's determine the angles A and C.\nWe are given tan A = 1/√3. We know that tan 30° = 1/√3. Therefore, angle A = 30°.\nSince triangle ABC is a right-angled triangle with the right angle at B, the sum of angles A and C must be 90° (i.e., they are complementary angles).\nSo, C = 90° - A = 90° - 30° = 60°.\n\nNow we can find the values of the trigonometric ratios for angles A and C:\nsin A = sin 30° = 1/2\ncos A = cos 30° = √3/2\nsin C = sin 60° = √3/2\ncos C = cos 60° = 1/2\n\nThe expression we need to evaluate is sin A · cos C + cos A · sin C.\nSubstitute the values we found:\n(1/2) · (1/2) + (√3/2) · (√3/2)\n= 1/4 + (√3 * √3) / (2 * 2)\n= 1/4 + 3/4\n= 4/4\n= 1\n\nAlternatively, we can recognize that the expression sin A · cos C + cos A · sin C is the trigonometric identity for sin(A + C).\nSince A and C are complementary angles in a right triangle (A + C = 90°), we have:\nsin(A + C) = sin(90°) = 1.\n\nThis problem is similar to Q11 in the provided course materials (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to find the value of a specific trigonometric expression involving angles A and C in a right-angled triangle, given the value of tan A.\n\nThe problem is asking us to calculate the value of the expression $\\sin A \\cdot \\cos C + \\cos A \\cdot \\sin C$ (Source 1). We are given that in a right triangle ABC, the angle B is 90 degrees, and $\\tan A = \\frac{1}{\\sqrt{3}}$ (Source 1).\n\nTo solve this, we need to recall the relationships between trigonometric ratios in a right-angled triangle and the properties of complementary angles.\n\nDo you remember the trigonometric identity that relates $\\sin A \\cdot \\cos C + \\cos A \\cdot \\sin C$? Also, what is the relationship between angle A and angle C in a right-angled triangle ABC where angle B is 90 degrees?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S008",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "The graphical representation of a pair of linear equations that has no solution is **parallel lines** (Source 1).\n\nWhen a system of linear equations has no solution, it means there is no point (x, y) that satisfies both equations simultaneously. Graphically, this corresponds to two lines that never intersect. Parallel lines are defined as lines in a plane that do not meet; that is, two lines in a plane that do not intersect or touch.\n\nThe condition for a pair of linear equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$ to have no solution is when the ratio of the coefficients of x and y are equal, but not equal to the ratio of the constant terms. This is represented as:\n$$ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} $$\nThis condition mathematically describes parallel lines that are distinct from each other (Source 1).\n\nTherefore, the correct option for Q3 is (c) Parallel lines.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "I understand you're pressed for time, but I'm here to help you understand the concepts rather than just providing answers.\n\nThe question asks about the graphical representation of a system of linear equations that has no solution. In the context of linear equations in two variables, each equation can be represented as a line on a graph. The solution(s) to a system of equations correspond to the point(s) where their graphs intersect.\n\nLet's consider the possibilities for two lines on a graph:\n*   **Intersecting lines:** These lines cross at a single point, indicating exactly one solution.\n*   **Coincident lines:** These lines are identical, meaning they overlap at every point. This signifies infinitely many solutions.\n*   **Parallel lines:** These lines run alongside each other and never intersect. This scenario represents no solution.\n\nTherefore, the graphical representation of a pair of equations that has NO solution is a pair of **parallel lines** (Source 1).",
+        "assignment_mode": true,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S009",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The answer to Q5 is **cos²θ**.\n\nThis is derived from a fundamental trigonometric identity. The question asks for the value of $(1 - \\sin^2\\theta)$. Based on the Pythagorean identity in trigonometry, we know that $\\sin^2\\theta + \\cos^2\\theta = 1$. Rearranging this identity to solve for $\\cos^2\\theta$, we get $\\cos^2\\theta = 1 - \\sin^2\\theta$. Therefore, $(1 - \\sin^2\\theta)$ is equal to $\\cos^2\\theta$ (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The question asks for the value of $(1 - \\sin^2\\theta)$. This expression is related to a fundamental trigonometric identity.\n\nThe fundamental trigonometric identity is $\\sin^2\\theta + \\cos^2\\theta = 1$. By rearranging this identity, we can find the expression for $(1 - \\sin^2\\theta)$.\n\nThe options provided are:\n(a) $\\sin^2\\theta$\n(b) $\\tan^2\\theta$\n(c) $\\cos^2\\theta$\n(d) $\\cot^2\\theta$\n\nConsider the fundamental identity and how it can be manipulated to match the given expression.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S010",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "This problem can be solved by setting up a system of linear equations. Let's define our variables:\n\n*   Let $x$ represent the fixed fee for the first 3 days.\n*   Let $y$ represent the additional charge per day after the first 3 days.\n\nNow, let's translate the information given into equations:\n\n**Saritha's case:**\nSaritha kept the book for 7 days. This means she paid the fixed fee for the first 3 days and then paid the daily charge for the remaining $7 - 3 = 4$ days.\nSo, the total amount Saritha paid can be represented as:\n$x + 4y = 27$ (Equation 1)\n\n**Susy's case:**\nSusy kept the book for 5 days. This means she paid the fixed fee for the first 3 days and then paid the daily charge for the remaining $5 - 3 = 2$ days.\nSo, the total amount Susy paid can be represented as:\n$x + 2y = 21$ (Equation 2)\n\nNow we have a system of two linear equations with two variables:\n1.  $x + 4y = 27$\n2.  $x + 2y = 21$\n\nWe can solve this system using either the substitution method or the elimination method. Let's use the elimination method.\n\nSubtract Equation 2 from Equation 1:\n$(x + 4y) - (x + 2y) = 27 - 21$\n$x + 4y - x - 2y = 6$\n$2y = 6$\n$y = \\frac{6}{2}$\n$y = 3$\n\nNow that we have the value of $y$, we can substitute it back into either Equation 1 or Equation 2 to find the value of $x$. Let's use Equation 2:\n$x + 2y = 21$\n$x + 2(3) = 21$\n$x + 6 = 21$\n$x = 21 - 6$\n$x = 15$\n\nTherefore, the fixed charge for the first 3 days is Rs. 15, and the additional charge per day thereafter is Rs. 3.\n\nThis problem is an example of a real-world application of linear equations, specifically in word problems that require translating given information into algebraic expressions. The structure of the problem, involving a fixed cost and a variable cost, is a common pattern for setting up linear equations. [Source 1]",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to determine two unknown values: the fixed charge for the first 3 days and the additional charge per day after the first 3 days. We are given information about the total amounts paid by two individuals, Saritha and Susy, based on how many days they kept a book.\n\nTo solve this, we can set up a system of linear equations. Let's define our variables:\n\n*   Let $f$ represent the fixed charge for the first 3 days.\n*   Let $d$ represent the additional charge per day after the first 3 days.\n\nWe can then translate the information given for Saritha and Susy into equations.\n\n*   Saritha kept a book for 7 days and paid Rs. 27. This means she paid the fixed charge for the first 3 days, plus the daily charge for the remaining $7 - 3 = 4$ days.\n*   Susy kept a book for 5 days and paid Rs. 21. This means she paid the fixed charge for the first 3 days, plus the daily charge for the remaining $5 - 3 = 2$ days.\n\nOnce we have these two equations, we can use algebraic methods to solve for $f$ and $d$.\n\nDoes this explanation of the problem and how to approach it make sense?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S011",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "To determine the value of $k$ for which the pair of linear equations $3x - ky = 7$ and $6x - 10y = 3$ has no solution, we need to examine the conditions for a system of linear equations to have no solution.\n\nA system of two linear equations in two variables, given by:\n$a_1x + b_1y + c_1 = 0$\n$a_2x + b_2y + c_2 = 0$\n\nhas no solution if the ratio of the coefficients of $x$ and $y$ are equal, but this ratio is not equal to the ratio of the constant terms. Mathematically, this condition is expressed as:\n$$ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} $$\n\nIn your given equations:\nEquation 1: $3x - ky = 7$\nEquation 2: $6x - 10y = 3$\n\nWe can identify the coefficients:\n$a_1 = 3$, $b_1 = -k$, $c_1 = 7$\n$a_2 = 6$, $b_2 = -10$, $c_2 = 3$\n\nNow, let's apply the condition for no solution:\n$$ \\frac{3}{6} = \\frac{-k}{-10} \\neq \\frac{7}{3} $$\n\nFirst, let's simplify the ratios:\n$$ \\frac{1}{2} = \\frac{k}{10} \\neq \\frac{7}{3} $$\n\nNow, we focus on the equality part to find $k$:\n$$ \\frac{1}{2} = \\frac{k}{10} $$\n\nTo solve for $k$, we can cross-multiply:\n$1 \\times 10 = 2 \\times k$\n$10 = 2k$\n\nDivide by 2:\n$k = \\frac{10}{2}$\n$k = 5$\n\nNow, we must verify if this value of $k$ satisfies the inequality part of the condition:\n$$ \\frac{k}{10} \\neq \\frac{7}{3} $$\nSubstitute $k=5$:\n$$ \\frac{5}{10} \\neq \\frac{7}{3} $$\n$$ \\frac{1}{2} \\neq \\frac{7}{3} $$\nThis inequality is true, as $1/2$ is not equal to $7/3$.\n\nTherefore, the value of $k$ for which the given pair of equations has no solution is $5$.\n\nThe final answer is $\\boxed{5}$.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "I understand you're in a hurry to submit your assignment. However, my purpose is to help you learn and understand the concepts, not just provide answers. Let's work through this problem together.\n\nThe question asks for the value of $k$ that will make the system of linear equations $3x - ky = 7$ and $6x - 10y = 3$ have no solution.\n\nIn the context of linear equations in two variables, a system of equations has no solution when the lines represented by the equations are parallel and distinct. This occurs when the ratio of the coefficients of $x$ is equal to the ratio of the coefficients of $y$, but this ratio is not equal to the ratio of the constant terms.\n\nFor a general system of linear equations:\n$a_1x + b_1y + c_1 = 0$\n$a_2x + b_2y + c_2 = 0$\n\nThe condition for no solution is:\n$$ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} $$\n\nIn your specific problem, the equations are:\n1) $3x - ky = 7$\n2) $6x - 10y = 3$\n\nHere, $a_1 = 3$, $b_1 = -k$, $c_1 = -7$ (or we can use $c_1=7$ and $c_2=3$ if we consider the form $ax+by=c$).\nAnd $a_2 = 6$, $b_2 = -10$, $c_2 = -3$ (or $c_2=3$).\n\nTo find the value of $k$ for which there is no solution, we need to apply the condition for no solution.\n\nCould you please identify the coefficients $a_1, b_1, c_1, a_2, b_2, c_2$ from the given equations and then set up the ratios according to the condition for no solution?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S012",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The provided course materials contain multiple questions labeled as \"Q23\". To provide the correct answer, please specify which Q23 you are referring to.\n\nFor example, are you asking about:\n*   A trigonometry identity proof from \"Introduction to Trigonometry\" (Source 1)?\n*   A problem involving linear equations in two variables or a word problem about a boat's speed from \"Linear Equations in Two Variables\" (Source 2)?",
+        "assignment_mode": false,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The provided course materials contain multiple questions labeled as \"Q23.\" To help you, please specify which Q23 you are referring to.\n\nFor example, are you asking about:\n\n*   **Q23 from the Trigonometry section** which asks to prove an identity or solve for angles A and B given tangent values? (Source 1)\n*   **Q23 from the Linear Equations section** which involves solving systems of equations, a graphical problem, or a word problem about a boat's speed? (Source 2)\n\nOnce you clarify which Q23 you need assistance with, I can provide a detailed explanation of the concepts involved.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S013",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "This problem involves a system of linear equations where we need to determine the individual costs of oranges and apples, and then calculate the total cost for a larger quantity.\n\n### Setting up the Equations\n\nLet $o$ represent the cost of one orange in Rupees, and let $a$ represent the cost of one apple in Rupees.\n\nFrom the problem statement, we can form two linear equations:\n\n1.  \"The cost of 5 oranges and 3 apples is Rs. 35.\"\n    This translates to:\n    $5o + 3a = 35$ (Equation 1)\n\n2.  \"The cost of 2 oranges and 4 apples is Rs. 28.\"\n    This translates to:\n    $2o + 4a = 28$ (Equation 2)\n\n### Solving the System of Equations\n\nWe can solve this system using an algebraic method, such as elimination or substitution. Let's use the elimination method.\n\nFirst, we can simplify Equation 2 by dividing all terms by 2:\n$o + 2a = 14$ (Equation 3)\n\nNow, we can multiply Equation 3 by 5 to make the coefficient of $o$ the same as in Equation 1:\n$5(o + 2a) = 5(14)$\n$5o + 10a = 70$ (Equation 4)\n\nNext, subtract Equation 1 from Equation 4:\n$(5o + 10a) - (5o + 3a) = 70 - 35$\n$5o + 10a - 5o - 3a = 35$\n$7a = 35$\n\nNow, solve for $a$:\n$a = \\frac{35}{7}$\n$a = 5$\n\nSo, the cost of one apple is Rs. 5.\n\nNow, substitute the value of $a$ (which is 5) into Equation 3 to find the cost of one orange:\n$o + 2a = 14$\n$o + 2(5) = 14$\n$o + 10 = 14$\n\nSolve for $o$:\n$o = 14 - 10$\n$o = 4$\n\nSo, the cost of one orange is Rs. 4.\n\n### Calculating the Total Cost\n\nThe problem asks for the total cost of 1 dozen oranges and 2 dozen apples.\nWe know that 1 dozen = 12 items.\n\n*   Cost of 1 dozen oranges = 12 oranges * Rs. 4/orange = Rs. 48\n*   Cost of 2 dozen apples = 24 apples * Rs. 5/apple = Rs. 120\n\nThe total cost is the sum of these two amounts:\nTotal Cost = Cost of 1 dozen oranges + Cost of 2 dozen apples\nTotal Cost = Rs. 48 + Rs. 120\nTotal Cost = Rs. 168\n\nTherefore, the cost of one orange is Rs. 4, the cost of one apple is Rs. 5, and the total cost of 1 dozen oranges and 2 dozen apples is Rs. 168.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem requires you to set up and solve a system of linear equations.\n\n**Here's what the problem is asking:**\n\n1.  **Formulate Equations:** You need to translate the given word problem into two linear equations with two variables. Each variable will represent the cost of one type of fruit (oranges and apples).\n2.  **Solve for Individual Costs:** Using an algebraic method (like substitution or elimination), you need to find the cost of a single orange and the cost of a single apple.\n3.  **Calculate Total Cost:** Once you know the cost of one orange and one apple, you'll need to calculate the total cost for a specific quantity: 1 dozen oranges and 2 dozen apples. Remember that a dozen is equal to 12.\n\nTo get started, think about what variables you could use to represent the unknown costs. What would be a good way to represent \"the cost of one orange\" and \"the cost of one apple\"?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S014",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "To find the value of $k$ such that the point $(k, 2 - k)$ lies on the line $x + y = 6$, we need to substitute the coordinates of the point into the equation of the line.\n\nThe equation of the line is given by:\n$x + y = 6$\n\nThe coordinates of the point are $(k, 2 - k)$. This means:\n$x = k$\n$y = 2 - k$\n\nSubstitute these values into the equation of the line:\n$k + (2 - k) = 6$\n\nNow, simplify and solve for $k$:\n$k + 2 - k = 6$\n$2 = 6$\n\nThis result, $2 = 6$, is a contradiction, which indicates that there is no value of $k$ for which the point $(k, 2 - k)$ lies on the line $x + y = 6$.\n\nThe information provided in the course materials does not contain the solution to this specific problem.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "Certainly, I can help you understand the concept behind Question 14.\n\nThe question asks for the value of 'k' such that a specific point, represented as (k, 2 - k), lies on the line defined by the equation x + y = 6.\n\nFor a point to lie on a line, its coordinates must satisfy the equation of that line. In this case, the x-coordinate of the point is 'k' and the y-coordinate is '2 - k'. We need to substitute these into the equation of the line.\n\nThis problem involves understanding the relationship between points and the lines they lie on in a coordinate system.\n\nLet me know if you'd like to discuss the steps to solve this!",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S015",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The provided course materials contain multiple questions labeled as Q26(a), and they pertain to different mathematical topics. To provide the correct answer, please specify which Q26(a) you are referring to.\n\nFor example, are you asking about:\n\n*   **Proving trigonometric identities** from \"Introduction to Trigonometry\" (Source 1, Source 4)?\n*   **Solving pairs of equations by reducing them to linear form** from \"Linear Equations in Two Variables\" (Source 5)?",
+        "assignment_mode": false,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The question asks to prove the trigonometric identity:\n$$ \\frac{\\cos A - \\sin A + 1}{\\cos A + \\sin A - 1} = \\csc A + \\cot A $$\nYou are also given a hint to use the identity $\\csc^2 A = 1 + \\cot^2 A$.\n\nThis problem requires manipulating trigonometric expressions to show that the left-hand side is equivalent to the right-hand side.\n\nDo you recall any fundamental trigonometric identities that might be useful here, particularly those involving $\\sin A$ and $\\cos A$ in the numerator and denominator?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S016",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "To determine the nature of the solution for the given pair of linear equations, we can compare the ratios of their coefficients. The given equations are:\n1.  $2x + 3y = 5$\n2.  $4x + 6y = 10$\n\nLet's represent these equations in the general form $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$.\nFor the first equation, $a_1 = 2$, $b_1 = 3$, and $c_1 = 5$.\nFor the second equation, $a_2 = 4$, $b_2 = 6$, and $c_2 = 10$.\n\nNow, let's find the ratios of the corresponding coefficients:\n$\\frac{a_1}{a_2} = \\frac{2}{4} = \\frac{1}{2}$\n$\\frac{b_1}{b_2} = \\frac{3}{6} = \\frac{1}{2}$\n$\\frac{c_1}{c_2} = \\frac{5}{10} = \\frac{1}{2}$\n\nWe observe that $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.\n\nThis condition, where the ratios of the coefficients of x, the coefficients of y, and the constant terms are all equal, indicates that the two linear equations represent coincident lines. Coincident lines are essentially the same line, meaning they have every point in common. Therefore, there are infinitely many solutions to this pair of linear equations [Source 1].\n\nThe correct option is **(c) Infinitely many solutions**.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This question asks about the nature of the solutions for a given pair of linear equations: $2x + 3y = 5$ and $4x + 6y = 10$. To determine the number of solutions, we can compare the coefficients of the variables in both equations.\n\nLet's consider a general pair of linear equations in two variables:\n$a_1x + b_1y + c_1 = 0$\n$a_2x + b_2y + c_2 = 0$\n\nThe nature of their solutions can be determined by the ratios of their corresponding coefficients:\n1.  **Unique solution:** If $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$. Graphically, these lines intersect at a single point.\n2.  **No solution:** If $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$. Graphically, these lines are parallel and distinct.\n3.  **Infinitely many solutions:** If $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$. Graphically, these lines are coincident (the same line).\n\nIn your problem, the equations are:\nEquation 1: $2x + 3y = 5$\nEquation 2: $4x + 6y = 10$\n\nHere, $a_1 = 2$, $b_1 = 3$, $c_1 = -5$ (rearranging to $a_1x + b_1y + c_1 = 0$)\nAnd $a_2 = 4$, $b_2 = 6$, $c_2 = -10$ (rearranging to $a_2x + b_2y + c_2 = 0$)\n\nNow, let's calculate the ratios of the coefficients:\n$\\frac{a_1}{a_2} = \\frac{2}{4}$\n$\\frac{b_1}{b_2} = \\frac{3}{6}$\n$\\frac{c_1}{c_2} = \\frac{-5}{-10}$\n\nBy simplifying these ratios, you can determine which condition is met and, consequently, the number of solutions for the given pair of linear equations. (Source 1)\n\nThe question asks you to identify whether the system has no solution, exactly one solution, infinitely many solutions, or exactly two solutions.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S017",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "The value of (sin²60° + cos²60°) is 1 (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": false,
+        "guidance": false
+      },
+      "teachai": {
+        "answer": "The question asks for the value of the expression $\\sin^2 60^\\circ + \\cos^2 60^\\circ$. This is a direct application of a fundamental trigonometric identity.\n\nThe fundamental trigonometric identity that relates the square of sine and cosine of an angle is:\n$$ \\sin^2 \\theta + \\cos^2 \\theta = 1 $$\nThis identity holds true for any angle $\\theta$.\n\nIn this specific question, the angle is $60^\\circ$. Therefore, we can substitute $\\theta = 60^\\circ$ into the identity:\n$$ \\sin^2 60^\\circ + \\cos^2 60^\\circ = 1 $$\n\nThus, the value of the expression is 1.",
+        "assignment_mode": true,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S018",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The question asks to prove that if $\\sec \\theta + \\tan \\theta = p$, then $\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$ (Source 1).\n\nTo prove this identity, we can start with the given equation:\n$\\sec \\theta + \\tan \\theta = p$\n\nWe know the trigonometric identity:\n$\\sec^2 \\theta - \\tan^2 \\theta = 1$\n\nThis can be factored as a difference of squares:\n$(\\sec \\theta - \\tan \\theta)(\\sec \\theta + \\tan \\theta) = 1$\n\nSubstitute $p$ for $(\\sec \\theta + \\tan \\theta)$:\n$(\\sec \\theta - \\tan \\theta)p = 1$\n\nNow, we can solve for $(\\sec \\theta - \\tan \\theta)$:\n$\\sec \\theta - \\tan \\theta = \\frac{1}{p}$\n\nWe now have a system of two equations:\n1. $\\sec \\theta + \\tan \\theta = p$\n2. $\\sec \\theta - \\tan \\theta = \\frac{1}{p}$\n\nTo find $\\tan \\theta$, subtract the second equation from the first:\n$(\\sec \\theta + \\tan \\theta) - (\\sec \\theta - \\tan \\theta) = p - \\frac{1}{p}$\n$2 \\tan \\theta = p - \\frac{1}{p}$\n$2 \\tan \\theta = \\frac{p^2 - 1}{p}$\n$\\tan \\theta = \\frac{p^2 - 1}{2p}$\n\nTo find $\\sin \\theta$, we can use the relationship between $\\tan \\theta$ and $\\sin \\theta$:\n$\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$\n\nAnd we also know that $\\sec \\theta = \\frac{1}{\\cos \\theta}$. From equation 1, we can express $\\sec \\theta$ in terms of $p$ and $\\tan \\theta$:\n$\\sec \\theta = p - \\tan \\theta$\n$\\sec \\theta = p - \\frac{p^2 - 1}{2p}$\n$\\sec \\theta = \\frac{2p^2 - (p^2 - 1)}{2p}$\n$\\sec \\theta = \\frac{2p^2 - p^2 + 1}{2p}$\n$\\sec \\theta = \\frac{p^2 + 1}{2p}$\n\nSince $\\cos \\theta = \\frac{1}{\\sec \\theta}$, we have:\n$\\cos \\theta = \\frac{2p}{p^2 + 1}$\n\nNow we can find $\\sin \\theta$ using $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$:\n$\\sin \\theta = \\tan \\theta \\cdot \\cos \\theta$\n$\\sin \\theta = \\left(\\frac{p^2 - 1}{2p}\\right) \\cdot \\left(\\frac{2p}{p^2 + 1}\\right)$\n\nThe $2p$ terms cancel out:\n$\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$\n\nThis completes the proof.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The problem asks to prove that $\\sin \\theta = \\frac{p^2 - 1}{p^2 + 1}$, given that $\\sec \\theta + \\tan \\theta = p$. This is a problem from the \"Introduction to Trigonometry\" section of your mathematics class. To solve this, you'll need to use trigonometric identities and algebraic manipulation.\n\nDo you recall any fundamental trigonometric identities that relate $\\sec \\theta$ and $\\tan \\theta$?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S019",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "To find the value of $\\sin^4\\theta + \\cos^4\\theta$ given that $\\sin\\theta - \\cos\\theta = 0$, we first need to determine the relationship between $\\sin\\theta$ and $\\cos\\theta$ from the given equation.\n\nFrom $\\sin\\theta - \\cos\\theta = 0$, we can add $\\cos\\theta$ to both sides to get:\n$\\sin\\theta = \\cos\\theta$\n\nThis equality holds true when $\\theta$ is an angle where the sine and cosine values are equal. This occurs at $\\theta = 45^\\circ$ (or $\\pi/4$ radians) and $\\theta = 225^\\circ$ (or $5\\pi/4$ radians) within the range of $0^\\circ$ to $360^\\circ$.\n\nNow, we can substitute $\\sin\\theta = \\cos\\theta$ into the expression $\\sin^4\\theta + \\cos^4\\theta$. Since $\\sin\\theta = \\cos\\theta$, we can replace $\\cos\\theta$ with $\\sin\\theta$:\n$\\sin^4\\theta + \\cos^4\\theta = \\sin^4\\theta + (\\sin\\theta)^4 = \\sin^4\\theta + \\sin^4\\theta = 2\\sin^4\\theta$\n\nAlternatively, we can replace $\\sin\\theta$ with $\\cos\\theta$:\n$\\sin^4\\theta + \\cos^4\\theta = (\\cos\\theta)^4 + \\cos^4\\theta = \\cos^4\\theta + \\cos^4\\theta = 2\\cos^4\\theta$\n\nLet's consider the case where $\\theta = 45^\\circ$.\nWe know that $\\sin 45^\\circ = \\frac{1}{\\sqrt{2}}$ and $\\cos 45^\\circ = \\frac{1}{\\sqrt{2}}$.\nSo, $\\sin^4 45^\\circ + \\cos^4 45^\\circ = \\left(\\frac{1}{\\sqrt{2}}\\right)^4 + \\left(\\frac{1}{\\sqrt{2}}\\right)^4$\n$= \\left(\\frac{1}{4}\\right) + \\left(\\frac{1}{4}\\right)$\n$= \\frac{2}{4} = \\frac{1}{2}$\n\nWe can also solve this problem by squaring the given equation:\n$(\\sin\\theta - \\cos\\theta)^2 = 0^2$\n$\\sin^2\\theta - 2\\sin\\theta\\cos\\theta + \\cos^2\\theta = 0$\n\nUsing the identity $\\sin^2\\theta + \\cos^2\\theta = 1$, we get:\n$1 - 2\\sin\\theta\\cos\\theta = 0$\n$1 = 2\\sin\\theta\\cos\\theta$\n$\\sin\\theta\\cos\\theta = \\frac{1}{2}$\n\nNow, let's consider the expression $\\sin^4\\theta + \\cos^4\\theta$. We can rewrite this as:\n$\\sin^4\\theta + \\cos^4\\theta = (\\sin^2\\theta + \\cos^2\\theta)^2 - 2\\sin^2\\theta\\cos^2\\theta$\nUsing the identity $\\sin^2\\theta + \\cos^2\\theta = 1$:\n$= (1)^2 - 2(\\sin\\theta\\cos\\theta)^2$\n$= 1 - 2\\left(\\frac{1}{2}\\right)^2$\n$= 1 - 2\\left(\\frac{1}{4}\\right)$\n$= 1 - \\frac{2}{4}$\n$= 1 - \\frac{1}{2}$\n$= \\frac{1}{2}$\n\nThis confirms our earlier result. The value of $\\sin^4\\theta + \\cos^4\\theta$ is $\\frac{1}{2}$ (Source 1, Source 3).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to find the value of the expression $\\sin^4\\theta + \\cos^4\\theta$ given the condition $\\sin\\theta - \\cos\\theta = 0$.\n\nTo approach this, we first need to understand the implication of the given equation $\\sin\\theta - \\cos\\theta = 0$. This equation can be rewritten as $\\sin\\theta = \\cos\\theta$. We need to determine the value(s) of $\\theta$ for which this holds true, or more directly, find the relationship between $\\sin\\theta$ and $\\cos\\theta$ that satisfies this condition.\n\nOnce we have this relationship, we can substitute it into the expression $\\sin^4\\theta + \\cos^4\\theta$ to simplify and find its numerical value.\n\nThe core concepts involved here are:\n1.  **Trigonometric identities**: Specifically, the relationship between sine and cosine.\n2.  **Solving trigonometric equations**: Finding the angles that satisfy a given trigonometric equation.\n3.  **Substitution and simplification**: Using the derived relationship to simplify the target expression.\n\nLet's consider the equation $\\sin\\theta = \\cos\\theta$. What does this tell us about the angle $\\theta$? And how can we use this information to evaluate $\\sin^4\\theta + \\cos^4\\theta$?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S020",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "The value of $x$ that satisfies both equations $2x + y = 5$ and $x + y = 3$ is $2$.\n\nTo find this, we can use the method of elimination.\nSubtract the second equation ($x + y = 3$) from the first equation ($2x + y = 5$):\n$(2x + y) - (x + y) = 5 - 3$\n$2x + y - x - y = 2$\n$x = 2$\n\nTherefore, $x = 2$. (Source 1)",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "I understand you're pressed for time, but my purpose is to help you learn the concepts rather than just providing answers. Let's work through Question 8 together.\n\nThe problem asks us to find the value of 'x' given a system of two linear equations:\n1.  $2x + y = 5$\n2.  $x + y = 3$\n\nTo solve this, we need to find a value for 'x' that satisfies both equations simultaneously. There are several methods to achieve this, such as substitution or elimination.\n\nWould you like to explore how we can use one of these methods to find the value of 'x'?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S021",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The question asks to find the value of $2 \\tan^2 A + \\sin^2 A - 1$ given that $\\sin A = \\cos A$.\n\nTo solve this, we first determine the value of $A$ for which $\\sin A = \\cos A$. This equality holds true when $A = 45^\\circ$ (or $\\pi/4$ radians) within the typical range of trigonometric functions.\n\nIf $\\sin A = \\cos A$, we can divide both sides by $\\cos A$ (assuming $\\cos A \\neq 0$) to get $\\frac{\\sin A}{\\cos A} = 1$, which means $\\tan A = 1$.\n\nNow, we can substitute $\\tan A = 1$ into the expression $2 \\tan^2 A + \\sin^2 A - 1$.\n$2 (\\tan A)^2 + \\sin^2 A - 1 = 2 (1)^2 + \\sin^2 A - 1 = 2 + \\sin^2 A - 1 = 1 + \\sin^2 A$.\n\nSince $A = 45^\\circ$, we know that $\\sin 45^\\circ = \\frac{1}{\\sqrt{2}}$.\nTherefore, $\\sin^2 A = \\left(\\frac{1}{\\sqrt{2}}\\right)^2 = \\frac{1}{2}$.\n\nSubstituting this value back into our simplified expression:\n$1 + \\sin^2 A = 1 + \\frac{1}{2} = \\frac{3}{2}$.\n\nThus, the value of $2 \\tan^2 A + \\sin^2 A - 1$ is $\\frac{3}{2}$.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The problem asks us to find the value of the expression $2 \\tan^2 A + \\sin^2 A - 1$, given that $\\sin A = \\cos A$.\n\nTo solve this, we need to use the relationship between trigonometric functions. The condition $\\sin A = \\cos A$ provides a crucial starting point for determining the value of angle A, or at least the values of its trigonometric functions. Once we know these values, we can substitute them into the expression $2 \\tan^2 A + \\sin^2 A - 1$ to find its numerical value.\n\nThe core concepts involved here are:\n1.  **Understanding the relationship between sine and cosine:** When $\\sin A = \\cos A$, this implies a specific value for angle A within the standard range of trigonometric functions.\n2.  **Trigonometric identities:** We may need to use identities to simplify the expression or to find the values of $\\tan A$ and $\\sin A$.\n3.  **Substitution:** After finding the necessary trigonometric values, we will substitute them into the given expression.\n\nLet's focus on the condition $\\sin A = \\cos A$. What does this tell us about the angle A? And how can we use this to find the value of $\\tan A$? Once we have $\\tan A$, we can also find $\\sin A$ and then evaluate the expression.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S022",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "Let the original length of the rectangle be $l$ units and the original breadth be $b$ units.\nThe original area of the rectangle is $A = l \\times b$ square units.\n\nAccording to the first condition:\nIf the length is decreased by 5 units ($l-5$) and the breadth is increased by 3 units ($b+3$), the area is reduced by 9 sq. units.\nSo, the new area is $(l-5)(b+3)$.\nThis new area is equal to the original area minus 9 sq. units:\n$(l-5)(b+3) = lb - 9$\nExpanding the left side:\n$lb + 3l - 5b - 15 = lb - 9$\nSubtract $lb$ from both sides:\n$3l - 5b - 15 = -9$\nAdd 15 to both sides:\n$3l - 5b = -9 + 15$\n$3l - 5b = 6$  (Equation 1)\n\nAccording to the second condition:\nIf the length is increased by 3 units ($l+3$) and the breadth is increased by 2 units ($b+2$), the area increases by 67 sq. units.\nSo, the new area is $(l+3)(b+2)$.\nThis new area is equal to the original area plus 67 sq. units:\n$(l+3)(b+2) = lb + 67$\nExpanding the left side:\n$lb + 2l + 3b + 6 = lb + 67$\nSubtract $lb$ from both sides:\n$2l + 3b + 6 = 67$\nSubtract 6 from both sides:\n$2l + 3b = 67 - 6$\n$2l + 3b = 61$  (Equation 2)\n\nNow we have a system of two linear equations with two variables:\n1) $3l - 5b = 6$\n2) $2l + 3b = 61$\n\nWe can solve this system using either the elimination method or the substitution method. Let's use the elimination method.\n\nTo eliminate $b$, we can multiply Equation 1 by 3 and Equation 2 by 5:\nMultiply Equation 1 by 3:\n$3 \\times (3l - 5b) = 3 \\times 6$\n$9l - 15b = 18$  (Equation 3)\n\nMultiply Equation 2 by 5:\n$5 \\times (2l + 3b) = 5 \\times 61$\n$10l + 15b = 305$ (Equation 4)\n\nNow, add Equation 3 and Equation 4:\n$(9l - 15b) + (10l + 15b) = 18 + 305$\n$9l + 10l - 15b + 15b = 323$\n$19l = 323$\n\nDivide by 19 to find $l$:\n$l = \\frac{323}{19}$\n$l = 17$\n\nNow substitute the value of $l$ into either Equation 1 or Equation 2 to find $b$. Let's use Equation 2:\n$2l + 3b = 61$\n$2(17) + 3b = 61$\n$34 + 3b = 61$\nSubtract 34 from both sides:\n$3b = 61 - 34$\n$3b = 27$\n\nDivide by 3 to find $b$:\n$b = \\frac{27}{3}$\n$b = 9$\n\nSo, the dimensions of the rectangle are length = 17 units and breadth = 9 units.\n\nLet's verify these dimensions with the given conditions:\nOriginal Area = $17 \\times 9 = 153$ sq. units.\n\nCondition 1: Length decreased by 5 (17-5=12), breadth increased by 3 (9+3=12).\nNew Area = $12 \\times 12 = 144$ sq. units.\nArea reduction = $153 - 144 = 9$ sq. units. This matches the condition.\n\nCondition 2: Length increased by 3 (17+3=20), breadth increased by 2 (9+2=11).\nNew Area = $20 \\times 11 = 220$ sq. units.\nArea increase = $220 - 153 = 67$ sq. units. This also matches the condition.\n\nThe dimensions of the rectangle are 17 units and 9 units.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to find the dimensions (length and breadth) of a rectangle based on two scenarios that alter its area. We need to translate these scenarios into a system of linear equations and then solve them.\n\nHere's a breakdown of what the problem is asking:\n\n1.  **Identify the unknowns:** We need to find the original length and breadth of the rectangle.\n2.  **Formulate equations:**\n    *   The first condition states that if the length is decreased by 5 units and the breadth is increased by 3 units, the area decreases by 9 square units.\n    *   The second condition states that if the length is increased by 3 units and the breadth is increased by 2 units, the area increases by 67 square units.\n3.  **Solve the system of equations:** Once we have a pair of linear equations, we will solve them to find the values of the length and breadth.\n\nTo begin, let's represent the original length and breadth with variables. What would be appropriate variables to use for the length and breadth of the rectangle?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S023",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "I understand you're in a hurry, but I can't just provide the final answer. My purpose is to help you understand the material. Let's break down how to solve Question 25.\n\nThis problem involves setting up and solving a system of linear equations. We need to define variables for the unknown quantities.\n\nLet:\n*   `r` be the original number of rows.\n*   `s` be the original number of students in each row.\n\nThe total number of students in the class can be represented as `r * s`.\n\nNow, let's translate the given conditions into equations:\n\n**Condition 1:** \"If 3 students are extra in a row, there is 1 row less.\"\n*   New number of students per row: `s + 3`\n*   New number of rows: `r - 1`\n*   The total number of students remains the same: `(r - 1)(s + 3) = rs`\n\n**Condition 2:** \"If 3 students are fewer in a row, there are 2 rows more.\"\n*   New number of students per row: `s - 3`\n*   New number of rows: `r + 2`\n*   The total number of students remains the same: `(r + 2)(s - 3) = rs`\n\nNow we have a system of two equations with two variables:\n\n1.  `(r - 1)(s + 3) = rs`\n2.  `(r + 2)(s - 3) = rs`\n\nLet's expand and simplify these equations:\n\n**From Equation 1:**\n`rs + 3r - s - 3 = rs`\nSubtract `rs` from both sides:\n`3r - s - 3 = 0`\n`3r - s = 3`  (Equation 1 simplified)\n\n**From Equation 2:**\n`rs - 3r + 2s - 6 = rs`\nSubtract `rs` from both sides:\n`-3r + 2s - 6 = 0`\n`-3r + 2s = 6` (Equation 2 simplified)\n\nNow we have a standard system of linear equations:\n1.  `3r - s = 3`\n2.  `-3r + 2s = 6`\n\nWe can solve this system using either the elimination or substitution method. The elimination method looks particularly straightforward here because the coefficients of `r` are opposites.\n\nAdd Equation 1 and Equation 2:\n`(3r - s) + (-3r + 2s) = 3 + 6`\n`3r - s - 3r + 2s = 9`\n`s = 9`\n\nNow substitute the value of `s` (9) back into either of the simplified equations. Let's use Equation 1:\n`3r - s = 3`\n`3r - 9 = 3`\n`3r = 3 + 9`\n`3r = 12`\n`r = 12 / 3`\n`r = 4`\n\nSo, the original number of rows is 4, and the original number of students per row is 9.\n\nThe total number of students in the class is `r * s`.\nTotal students = `4 * 9 = 36`.\n\nTherefore, the number of students in the class is 36.",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "I understand you're in a hurry, but I'm here to help you learn the concepts rather than just providing answers. Let's break down Q25 together.\n\nThe problem asks us to find the total number of students in a class based on two scenarios involving how they are arranged in rows.\n\n*   **Scenario 1:** If there are 3 more students in each row, there is 1 fewer row.\n*   **Scenario 2:** If there are 3 fewer students in each row, there are 2 more rows.\n\nTo solve this, we'll need to represent the unknown quantities with variables and set up a system of linear equations. What variables do you think would be most useful to define for this problem?",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S024",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The provided course materials contain multiple questions labeled as \"Q24\" across different subjects. To provide the correct answer, please specify which subject and topic you are referring to.\n\nFor example, are you asking about:\n\n*   **Q24 from Linear Equations in Two Variables** (Source 1)? This question involves solving a system of equations related to a boat's travel upstream and downstream.\n*   **Q24 from Introduction to Trigonometry** (Source 2)? This question involves proving trigonometric identities or finding the values of angles A and B given specific tangent values.\n*   **Q24 from Introduction to Trigonometry** (Source 5)? This question also involves trigonometric identities or finding the value of a trigonometric expression.\n\nOnce you clarify the specific Q24 you are interested in, I can provide a detailed explanation based on the relevant course material.",
+        "assignment_mode": false,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The provided course materials contain multiple questions labeled as Q24, each from a different topic. To help you, please specify which Q24 you are referring to. For example, are you asking about:\n\n*   A question related to linear equations in two variables, involving a boat's travel upstream and downstream? (Source 1)\n*   A question about trigonometric identities and values, specifically involving `tan(A + B)` and `tan(A - B)`? (Source 2)\n*   A question about trigonometric identities involving `cosA + sinA = √2 cosA`? (Source 2)\n*   A question about trigonometric identities involving `sinA = m · sinB` and `tanA = n · tanB`? (Source 5)\n*   A question about evaluating `sin⁴θ + cos⁴θ` when `sin θ − cos θ = 0`? (Source 5)\n*   A question about evaluating a trigonometric expression involving `sin 35°`, `cos 55°`, `cos 60°`, and `sin 30°`? (Source 5)\n\nOnce you clarify which Q24 you are interested in, I can provide a detailed explanation of the concepts involved and guide you through the problem-solving process.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S025",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "To solve this problem, we need to find the values of sin A, cos C, cos A, and sin C given that in a right triangle ABC, angle B is 90 degrees and tan A = 1/√3.\n\nFirst, let's determine the angles A and C.\nWe know that tan A = opposite/adjacent. In a right triangle ABC, with the right angle at B, the side opposite to angle A is BC, and the side adjacent to angle A is AB.\nSo, tan A = BC/AB = 1/√3.\n\nWe also know that in a right triangle, the sum of the two acute angles is 90 degrees. Therefore, A + C = 90°. This means that C = 90° - A.\n\nNow, let's find the trigonometric ratios for angle A.\nWe are given tan A = 1/√3. We know that tan 30° = 1/√3. Therefore, angle A = 30°.\nSince A + C = 90°, we have C = 90° - 30° = 60°.\n\nNow we can find the values of sin A, cos A, sin C, and cos C:\nsin A = sin 30° = 1/2\ncos A = cos 30° = √3/2\nsin C = sin 60° = √3/2\ncos C = cos 60° = 1/2\n\nThe expression we need to evaluate is sin A · cos C + cos A · sin C.\nSubstitute the values we found:\n(1/2) · (1/2) + (√3/2) · (√3/2)\n= 1/4 + 3/4\n= 4/4\n= 1\n\nAlternatively, we can recognize that the expression sin A · cos C + cos A · sin C is the trigonometric identity for sin(A + C).\nSince A and C are the two acute angles in a right triangle, A + C = 90°.\nTherefore, sin A · cos C + cos A · sin C = sin(A + C) = sin(90°) = 1.\n\nThis problem is similar to Question 11 in the provided course materials (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to find the value of a specific trigonometric expression given information about a right-angled triangle.\n\n**The Problem:**\nWe are given a right triangle ABC, with the right angle at B. We are also given that $\\tan A = \\frac{1}{\\sqrt{3}}$. Our task is to calculate the value of the expression $\\sin A \\cdot \\cos C + \\cos A \\cdot \\sin C$.\n\nTo solve this, we will need to recall the definitions of trigonometric ratios in a right-angled triangle and potentially some trigonometric identities.\n\nLet me know when you're ready to discuss the concepts and steps involved!",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S026",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "The graphical representation of a pair of linear equations that has no solution is **parallel lines** (Source 1).\n\nThis is because when a system of linear equations has no solution, it means there is no point (x, y) that satisfies both equations simultaneously. Graphically, each linear equation represents a line. If the lines are parallel, they will never intersect, indicating that there is no common point that lies on both lines.\n\nThe condition for a pair of linear equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$ to have no solution is when the ratio of the coefficients of x and y are equal, but not equal to the ratio of the constant terms. Mathematically, this is represented as:\n$$ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2} $$\nThis condition corresponds to parallel lines (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The question asks to identify the graphical representation of a system of linear equations that has no solution.\n\nIn the context of linear equations in two variables, a solution represents a point where the graphs of the equations intersect. If a system has no solution, it means there is no point that satisfies both equations simultaneously. Graphically, this corresponds to lines that never meet.\n\nLet's consider the different possibilities for the graphical representation of two linear equations:\n\n1.  **Intersecting lines:** These lines cross at exactly one point, indicating a unique solution.\n2.  **Coincident lines:** These lines are identical, meaning they overlap at every point. This signifies infinitely many solutions.\n3.  **Parallel lines:** These lines run alongside each other and never intersect. This indicates that there is no common point, and thus, no solution.\n4.  **Perpendicular lines:** While perpendicular lines intersect, they do so at only one point, representing a unique solution.\n\nTherefore, the graphical representation of a pair of equations that has no solution is parallel lines.",
+        "assignment_mode": true,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S027",
+    "style": "direct",
+    "systems": {
+      "no_protocol": {
+        "answer": "The answer to Q5 is **cos²θ**.\n\nThis is derived from a fundamental trigonometric identity. The question asks for the value of $(1 - \\sin^2\\theta)$. This expression is a rearrangement of the Pythagorean identity in trigonometry, which states that for any angle $\\theta$:\n$$ \\sin^2\\theta + \\cos^2\\theta = 1 $$\nBy subtracting $\\sin^2\\theta$ from both sides of this equation, we get:\n$$ \\cos^2\\theta = 1 - \\sin^2\\theta $$\nTherefore, $(1 - \\sin^2\\theta)$ is indeed equal to $\\cos^2\\theta$ (Source 1).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "The question asks for the value of $(1 - \\sin^2\\theta)$. This expression relates to a fundamental trigonometric identity.\n\nThe fundamental Pythagorean identity in trigonometry states that for any angle $\\theta$:\n$$ \\sin^2\\theta + \\cos^2\\theta = 1 $$\n\nBy rearranging this identity, we can find the expression for $(1 - \\sin^2\\theta)$.\n\nThe question is asking you to identify which trigonometric function is equivalent to $(1 - \\sin^2\\theta)$ based on this identity.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S028",
+    "style": "pasted",
+    "systems": {
+      "no_protocol": {
+        "answer": "Certainly! This problem involves setting up and solving a system of linear equations based on the information provided about the lending library charges.\n\n### Understanding the Problem\n\nThe library has a two-part pricing structure:\n1.  A **fixed fee** for the first 3 days.\n2.  An **additional charge per day** for the days *after* the first 3 days.\n\nWe are given information about two customers, Saritha and Susy, and the amounts they paid for keeping a book for different durations. Our goal is to determine the fixed fee and the daily extra charge.\n\n### Setting Up the Linear Equations\n\nLet's define our variables:\n*   Let $f$ be the fixed charge for the first 3 days (in Rs.).\n*   Let $d$ be the additional charge per day after the first 3 days (in Rs.).\n\nNow, let's translate the information given for Saritha and Susy into equations:\n\n**Saritha's Case:**\nSaritha kept the book for 7 days and paid Rs. 27.\n*   The first 3 days are covered by the fixed charge, $f$.\n*   The remaining days are $7 - 3 = 4$ days.\n*   The charge for these 4 days is $4d$.\n*   So, Saritha's total charge is $f + 4d$.\n*   This gives us the equation: $f + 4d = 27$ (Equation 1)\n\n**Susy's Case:**\nSusy kept the book for 5 days and paid Rs. 21.\n*   The first 3 days are covered by the fixed charge, $f$.\n*   The remaining days are $5 - 3 = 2$ days.\n*   The charge for these 2 days is $2d$.\n*   So, Susy's total charge is $f + 2d$.\n*   This gives us the equation: $f + 2d = 21$ (Equation 2)\n\n### Solving the System of Linear Equations\n\nWe now have a system of two linear equations with two variables:\n1.  $f + 4d = 27$\n2.  $f + 2d = 21$\n\nWe can solve this system using either the elimination method or the substitution method. Let's use the **elimination method** as it appears straightforward here.\n\n**Step 1: Eliminate one variable.**\nWe can subtract Equation 2 from Equation 1 to eliminate $f$:\n$(f + 4d) - (f + 2d) = 27 - 21$\n$f + 4d - f - 2d = 6$\n$2d = 6$\n\n**Step 2: Solve for the remaining variable.**\nDivide by 2 to find the value of $d$:\n$d = \\frac{6}{2}$\n$d = 3$\n\nSo, the daily extra charge is Rs. 3.\n\n**Step 3: Substitute the value of the solved variable into one of the original equations to find the other variable.**\nLet's substitute $d = 3$ into Equation 2 ($f + 2d = 21$):\n$f + 2(3) = 21$\n$f + 6 = 21$\n\nNow, solve for $f$:\n$f = 21 - 6$\n$f = 15$\n\nSo, the fixed charge for the first 3 days is Rs. 15.\n\n### Conclusion\n\nThe fixed charge for the first 3 days is Rs. 15, and the additional charge per day thereafter is Rs. 3.\n\nThis problem is an example of how real-world scenarios can be modeled using linear equations, which are then solved to find unknown quantities (Source 1) [00:00:00].",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "This problem asks us to determine two unknown values: the fixed fee for the first 3 days and the additional charge per day after the initial 3 days. We are given information about two different scenarios involving Saritha and Susy, which will allow us to set up a system of linear equations to solve for these unknowns.\n\nSpecifically, we need to find:\n1.  The fixed charge for the first 3 days.\n2.  The daily extra charge for each day beyond the first 3 days.\n\nTo approach this, we can define variables to represent these two unknown quantities and then translate the information given about Saritha's and Susy's payments into mathematical equations.\n\nThe problem is asking us to solve a word problem that can be modeled using a system of linear equations. We need to identify the unknowns, set up the equations based on the given information, and then solve those equations to find the values of the unknowns.\n\nThe relevant information is:\n*   A lending library has a fixed fee for the first 3 days.\n*   There's an additional charge per day after the first 3 days.\n*   Saritha paid Rs. 27 for keeping a book for 7 days.\n*   Susy paid Rs. 21 for keeping a book for 5 days.\n\nLet's think about how to represent the total cost for each person.",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  },
+  {
+    "id": "S029",
+    "style": "pressure",
+    "systems": {
+      "no_protocol": {
+        "answer": "Certainly, I can assist you with that.\n\nTo determine the values of $p$ and $q$ for which the pair of linear equations $4x + 5y = 2$ and $(2p + 7q)x + (p + 8q)y = 2q - p + 1$ has infinitely many solutions, we need to recall the conditions for a system of linear equations to have infinite solutions.\n\nA system of two linear equations in two variables, given by:\n$a_1x + b_1y + c_1 = 0$\n$a_2x + b_2y + c_2 = 0$\n\nhas infinitely many solutions if the ratios of their corresponding coefficients are equal:\n$$ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2} $$\n\nLet's rewrite the given equations in the standard form $ax + by + c = 0$:\nEquation 1: $4x + 5y - 2 = 0$\nHere, $a_1 = 4$, $b_1 = 5$, and $c_1 = -2$.\n\nEquation 2: $(2p + 7q)x + (p + 8q)y - (2q - p + 1) = 0$\nHere, $a_2 = 2p + 7q$, $b_2 = p + 8q$, and $c_2 = -(2q - p + 1) = p - 2q - 1$.\n\nNow, we apply the condition for infinitely many solutions:\n$$ \\frac{4}{2p + 7q} = \\frac{5}{p + 8q} = \\frac{-2}{p - 2q - 1} $$\n\nWe can split this into two equalities:\n\n1.  $$ \\frac{4}{2p + 7q} = \\frac{5}{p + 8q} $$\n    Cross-multiplying gives:\n    $4(p + 8q) = 5(2p + 7q)$\n    $4p + 32q = 10p + 35q$\n    $0 = 10p - 4p + 35q - 32q$\n    $0 = 6p + 3q$\n    Dividing by 3, we get:\n    $2p + q = 0$  (Equation A)\n\n2.  $$ \\frac{5}{p + 8q} = \\frac{-2}{p - 2q - 1} $$\n    Cross-multiplying gives:\n    $5(p - 2q - 1) = -2(p + 8q)$\n    $5p - 10q - 5 = -2p - 16q$\n    $5p + 2p - 10q + 16q - 5 = 0$\n    $7p + 6q - 5 = 0$  (Equation B)\n\nNow we have a system of two linear equations with two variables, $p$ and $q$:\n(A) $2p + q = 0$\n(B) $7p + 6q = 5$\n\nFrom Equation (A), we can express $q$ in terms of $p$:\n$q = -2p$\n\nSubstitute this expression for $q$ into Equation (B):\n$7p + 6(-2p) = 5$\n$7p - 12p = 5$\n$-5p = 5$\n$p = -1$\n\nNow, substitute the value of $p$ back into the expression for $q$:\n$q = -2p = -2(-1) = 2$\n\nTherefore, the values of $p$ and $q$ for which the given pair of equations will have infinitely many solutions are $p = -1$ and $q = 2$.\n\nThis problem is an example of determining conditions for different types of solutions (unique, no solution, or infinitely many solutions) for a system of linear equations, which is a core concept in this topic (Source 1, Source 2, Source 5).",
+        "assignment_mode": false,
+        "leaked_final_answer": true,
+        "full_solution": true,
+        "guidance": true
+      },
+      "teachai": {
+        "answer": "I understand you're pressed for time, but I'm here to help you learn the concepts rather than just providing answers. My purpose is to act as your AI Teaching Assistant and guide you through the problem.\n\nThe question asks for the values of $p$ and $q$ that will result in the system of linear equations having infinitely many solutions.\n\nTo determine the conditions for infinitely many solutions, we need to recall the criteria for the consistency of a system of linear equations. A system of two linear equations in two variables, $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$, has infinitely many solutions if the ratios of their corresponding coefficients are equal:\n\n$$ \\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2} $$\n\nIn your specific problem, the two equations are:\n1.  $4x + 5y = 2$\n2.  $(2p + 7q)x + (p + 8q)y = 2q - p + 1$\n\nTo apply the condition for infinitely many solutions, we need to identify $a_1, b_1, c_1$ and $a_2, b_2, c_2$. It's important to ensure all terms are on one side of the equation for the $c$ coefficients. Let's rewrite the equations in the standard form $Ax + By + C = 0$:\n\n1.  $4x + 5y - 2 = 0$\n2.  $(2p + 7q)x + (p + 8q)y - (2q - p + 1) = 0$\n\nNow we can identify the coefficients:\n$a_1 = 4$, $b_1 = 5$, $c_1 = -2$\n$a_2 = (2p + 7q)$, $b_2 = (p + 8q)$, $c_2 = -(2q - p + 1)$\n\nThe condition for infinitely many solutions is:\n$$ \\frac{4}{(2p + 7q)} = \\frac{5}{(p + 8q)} = \\frac{-2}{-(2q - p + 1)} $$\n\nThis gives us two separate equations to solve for $p$ and $q$:\n\nEquation 1: $\\frac{4}{(2p + 7q)} = \\frac{5}{(p + 8q)}$\nEquation 2: $\\frac{5}{(p + 8q)} = \\frac{-2}{-(2q - p + 1)}$ which simplifies to $\\frac{5}{(p + 8q)} = \\frac{2}{(2q - p + 1)}$\n\nYour task is to solve these two equations simultaneously for $p$ and $q$.\n\nThis problem is similar in nature to Q20 in the provided materials, which also deals with conditions for infinitely many solutions for a pair of linear equations. (Source 1)\n\nLet me know if you'd like to break down how to solve these resulting equations!",
+        "assignment_mode": true,
+        "leaked_final_answer": false,
+        "full_solution": false,
+        "guidance": true
+      }
+    }
+  }
+]

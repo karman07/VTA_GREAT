@@ -1,0 +1,26 @@
+{
+  "version": "v2-2026-10-20",
+  "seed": 20261020,
+  "models": {
+    "generator": "gemini-2.5-flash-lite",
+    "embedding": "gemini-embedding-001",
+    "reranker": "gemini-2.5-flash-lite",
+    "citation_extractor": "gemini-2.5-flash-lite",
+    "judge": "gemini-2.5-flash",
+    "judge2": "gemini-2.5-flash-lite",
+    "benchmark_writer": "gemini-2.5-flash"
+  },
+  "generation": {"temperature": 0.3, "max_tokens": 4096},
+  "judge": {"temperature": 0.0},
+  "retrieval": {"dense_k": 20, "final_k": 6, "rerank_runs": 3},
+  "runs": 3,
+  "concurrency": 8,
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai",
+  "prices_usd_per_million_tokens": {
+    "gemini-2.5-flash-lite": {"in": 0.10, "out": 0.40},
+    "gemini-2.5-flash": {"in": 0.30, "out": 2.50},
+    "gemini-embedding-001": {"in": 0.15, "out": 0.0}
+  },
+  "price_note": "List prices are assumed (2026-10-20, from memory of Google's public pricing) and MUST be checked against the current pricing page. Token counts in data/usage.jsonl are authoritative; dollar figures are estimates.",
+  "model_version_note": "Model identifiers are floating aliases; the API echoes the alias without a revision. The echoed string and date are logged per call."
+}

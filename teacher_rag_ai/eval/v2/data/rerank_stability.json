@@ -1,0 +1,20 @@
+{
+ "n_queries": 99,
+ "rerank_runs": 3,
+ "top6_jaccard_between_runs": {
+  "mean": 1.0,
+  "min": 1.0
+ },
+ "kendall_tau_top20_between_runs": {
+  "mean": 1.0,
+  "min": 1.0
+ },
+ "mrr_by_run": [
+  0.8963083213083213,
+  0.8963083213083213,
+  0.8963083213083213
+ ],
+ "v1_mrr_dense": 0.826,
+ "v1_mrr_rerank": 0.896,
+ "rerank_errors": 0
+}

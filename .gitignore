@@ -1,0 +1,13 @@
+node_modules/
+.next/
+dist/
+venv/
+.venv/
+__pycache__/
+.env
+.env.local
+uploads/
+qdrant_data/
+chroma_db/
+*.tsbuildinfo
+.DS_Store

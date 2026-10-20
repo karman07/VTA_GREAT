@@ -1,0 +1,79 @@
+diff --git a/gemini_client.py b/gemini_client.py
+index 7d1703ec..25b2c827 100644
+--- a/gemini_client.py
++++ b/gemini_client.py
+@@ -187,6 +187,21 @@ class GeminiClient:
+             return [{"id": str(p.id), "score": p.score, "payload": p.payload} for p in res.points]
+         return await asyncio.to_thread(_run)
+ 
++    async def qdrant_scroll(self, collection: str, filter_: dict, limit: int = 1000) -> list[dict]:
++        """All points matching a filter (payload only), unordered."""
++        def _run():
++            if not self._qdrant.collection_exists(collection):
++                return []
++            out, offset = [], None
++            while True:
++                points, offset = self._qdrant.scroll(
++                    collection, scroll_filter=self._to_filter(filter_), limit=256,
++                    offset=offset, with_payload=True, with_vectors=False)
++                out.extend({"id": str(p.id), "payload": p.payload} for p in points)
++                if offset is None or len(out) >= limit:
++                    return out
++        return await asyncio.to_thread(_run)
++
+     async def qdrant_delete(self, collection: str, filter_: dict):
+         def _run():
+             if self._qdrant.collection_exists(collection):
+diff --git a/main.py b/main.py
+index 2f429cc2..95a68a88 100644
+--- a/main.py
++++ b/main.py
+@@ -271,6 +271,18 @@ async def delete_file_chunks(file_id: str, req: DeleteRequest):
+         raise HTTPException(status_code=500, detail=str(e))
+ 
+ 
++@app.get("/files/{file_id}/text")
++async def get_file_text(file_id: str, collection_name: str):
++    """Stored text passages of one file, in reading order (used by the in-app document viewer)."""
++    try:
++        engine = get_engine()
++        chunks = await engine.get_file_chunks(collection_name=collection_name, file_id=file_id)
++        return {"file_id": file_id, "chunks": chunks}
++    except Exception as e:
++        logger.error(f"Text fetch error: {e}", exc_info=True)
++        raise HTTPException(status_code=500, detail=str(e))
++
++
+ @app.get("/collections")
+ async def list_collections(x_admin_key: str = Header(default=None)):
+     """Admin endpoint to list all Qdrant collections."""
+diff --git a/rag_engine.py b/rag_engine.py
+index d36c838a..950fec74 100644
+--- a/rag_engine.py
++++ b/rag_engine.py
+@@ -332,6 +332,25 @@ class RAGEngine:
+             logger.warning(f"[delete] failed: {e}")
+             return {"deleted": False}
+ 
++    # ── Read back stored text (document viewer) ───────────────────────────
++
++    async def get_file_chunks(self, *, collection_name, file_id) -> list[dict]:
++        points = await self.gpu.qdrant_scroll(collection_name, {
++            "must": [{"key": "file_id", "match": {"value": file_id}}]
++        })
++        rows = []
++        for p in points:
++            pl = p["payload"]
++            page = int(pl.get("page", -1))
++            rows.append({
++                "idx": int(pl.get("chunk_idx", 0)),
++                "page": page if page >= 0 else None,
++                "kind": pl.get("content_type", "text"),
++                "text": pl.get("document", ""),
++            })
++        rows.sort(key=lambda r: r["idx"])
++        return rows
++
+     # ── Query ─────────────────────────────────────────────────────────────
+ 
+     _SCOPE_PATTERN = r"^\[Context:\s*Only answer from the file with id\s+([a-f0-9-]+)\]\s*"

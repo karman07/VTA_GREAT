@@ -1,0 +1,1328 @@
+{
+  "answerable": [
+    {
+      "question": "Which clustering method is mentioned for use with categorical data?",
+      "reference_answer": "For categorical data, the K-modes clustering method is mentioned.",
+      "type": "factual",
+      "gold_chunk_id": "373b3d58d69a106eb8a6677d5c66a215",
+      "gold_key": "53111cf4c9a9a6fd4131df8bb2951d72",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 14,
+      "id": "A000"
+    },
+    {
+      "question": "Why doesn't strong performance on one language model benchmark, like MMLU, always guarantee strong performance on another, such as the Vicuna chatbot benchmark?",
+      "reference_answer": "Research indicates that strong performance on the Massive Multitask Language Understanding (MMLU) benchmark does not necessarily imply strong performance on the Vicuna chatbot benchmark, and vice versa. This is because the suitability of the dataset for a given task is considered more important than its size.",
+      "type": "conceptual",
+      "gold_chunk_id": "2ed488df00acc741e7be4b8aa7b32bdc",
+      "gold_key": "a0f04f36e01d81e364c13c92b8528de3",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 2,
+      "id": "A001"
+    },
+    {
+      "question": "If a neural network used a linear activation function for every layer, what two main problems would arise, and how would these issues impact the network's ability to learn and process information?",
+      "reference_answer": "If a neural network used a linear activation function for every layer, two main problems would arise: it would be impossible to use backpropagation because the derivative is constant and has no relation to the input. Additionally, all layers would collapse into one, meaning the last layer would remain a linear function of the first layer, regardless of the number of layers. These issues would severely limit the network's learning capacity.",
+      "type": "analytical",
+      "gold_chunk_id": "1927b1dc677c40a23862c06d18b24f96",
+      "gold_key": "767c639581c08fc556449dfc55e30a31",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 4,
+      "id": "A002"
+    },
+    {
+      "question": "I'm working on a machine learning project where I've used a clustering algorithm, and I actually have access to the true categories (ground truth labels) for all my data points. Which metrics should I consider using to evaluate how well my clustering performed?",
+      "reference_answer": "When you have ground truth labels available for your data points, appropriate metrics for evaluating clustering quality include Rand Index (RI), Adjusted Rand Index (ARI), and Purity.",
+      "type": "problem_solving",
+      "gold_chunk_id": "b6b30f304c4f2fc3d25944a635f49a80",
+      "gold_key": "860f3603a8f8a18b69f522d8f31de26a",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 5,
+      "id": "A003"
+    },
+    {
+      "question": "How is the distance between two clusters determined when using the average linkage method?",
+      "reference_answer": "In the average linkage method, the distance between two clusters is equal to the average distance between each object in one cluster and every object in the other cluster.",
+      "type": "factual",
+      "gold_chunk_id": "0a5782c021769ba0ed7be8bbf1747102",
+      "gold_key": "94b22e941c01a9e959747aa9902c0f48",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 8,
+      "id": "A004"
+    },
+    {
+      "question": "What factors are contributing to the increasing success and adoption of deep learning algorithms?",
+      "reference_answer": "Deep learning models perform well due to the availability of sufficient data for training, significant computational power to handle large models, and continuous development of deep learning algorithms. These elements are crucial for their effectiveness and rise in popularity.",
+      "type": "conceptual",
+      "gold_chunk_id": "12d0b02ed33cffb1eef38ee46bf0db78",
+      "gold_key": "6c18448a0cd02b025c6f9a51a50e1690",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 3,
+      "id": "A005"
+    },
+    {
+      "question": "When performing backpropagation, how is the gradient with respect to the pre-activation `z1` (∂L/∂z1) utilized to determine the gradients for the weights `W1` (∂L/∂W1) and biases `b1` (∂L/∂b1)? What is the primary difference in their final calculated forms?",
+      "reference_answer": "The gradient with respect to `z1` (∂L/∂z1) is a crucial intermediate step for computing both ∂L/∂W1 and ∂L/∂b1. ∂L/∂b1 is directly equal to ∂L/∂z1, whereas ∂L/∂W1 is calculated by multiplying ∂L/∂z1 by `x^T`.",
+      "type": "analytical",
+      "gold_chunk_id": "6dc1a849f1c7afb2b9caae98db716273",
+      "gold_key": "a63155fef3eab44de596b9e59a407dc3",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 7,
+      "id": "A006"
+    },
+    {
+      "question": "Imagine a deep neural network with layers numbered L=0 (input) up to L=4 (output). It has 3 neurons in the input layer, 5 neurons in the first hidden layer, 5 in the second hidden layer, 3 in the third hidden layer, and 1 neuron in the output layer. If zL for any layer L is computed using the formula zL = WLaL-1 + bL (where WL is the weight matrix, bL is the bias matrix, and aL-1 are activations from the previous layer), how would you write out the specific calculation for z in the network's third hidden layer? Also, how many total layers are there in this network?",
+      "reference_answer": "For the third hidden layer, L=3. Using the formula zL = WLaL-1 + bL, the expression for this layer would be z3 = W3a2 + b3. The network has layers from L=0 (input) to L=4 (output), making a total of 5 layers.",
+      "type": "problem_solving",
+      "gold_chunk_id": "4681b24bb11c5c7e1ec836cb8c00ebf1",
+      "gold_key": "7a6171b871716bc46e0929d27cf71d40",
+      "file_name": "Deep Learning-III (Deep Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR, ",
+      "page": 4,
+      "id": "A007"
+    },
+    {
+      "question": "What is the key difference between the K-Means++ algorithm and the standard K-Means algorithm?",
+      "reference_answer": "The K-Means++ algorithm differs from the standard K-Means algorithm in the specific method used for updating centroids.",
+      "type": "factual",
+      "gold_chunk_id": "1424c28520dacb82de3d83606167c0be",
+      "gold_key": "206235e53b34144bbc82010a4cb9c9f3",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 18,
+      "id": "A008"
+    },
+    {
+      "question": "How come the Guanaco model is the only top model in the evaluation that isn't trained on private data?",
+      "reference_answer": "Guanaco is unique among top models because it was trained using the OASST1 dataset. The collection guidelines for the OASST1 dataset explicitly prohibit the use of GPT models, ensuring that Guanaco relies solely on open-source data.",
+      "type": "conceptual",
+      "gold_chunk_id": "f8948fe707cdeaf9aa0a9f658ae67322",
+      "gold_key": "86b460e03e516f6f2b408682b6bb93a6",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 10,
+      "id": "A009"
+    },
+    {
+      "question": "Leaky ReLU is designed to have a small positive slope for negative input values. What are the key advantages and potential drawbacks of this specific design choice when training a neural network?",
+      "reference_answer": "This design choice allows for backpropagation even with negative input values, which helps address the 'Dying ReLU' problem. However, a potential drawback is that the small gradient for negative values can make the learning of model parameters time-consuming. Additionally, predictions for negative input values might not always be consistent.",
+      "type": "analytical",
+      "gold_chunk_id": "b4eba7fb4be3f2b25202bdeb67e320df",
+      "gold_key": "2d933375e3979beab488677463c04c18",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 12,
+      "id": "A010"
+    },
+    {
+      "question": "I'm working with a dataset that has a lot of dimensions, and I want to cluster it while also being able to visualize the clusters in a simpler 2D or 3D way. Is there a specific type of clustering technique that could do this, and what's its basic approach?",
+      "reference_answer": "For clustering high-dimensional data and mapping it onto a 2-D or 3-D feature map for visualization, Self-Organizing Maps (SOMs) would be a suitable method. SOMs are neural network-based methods that perform clustering by projecting the complex data onto these lower-dimensional maps.",
+      "type": "problem_solving",
+      "gold_chunk_id": "7ac6ef3e2b130d1322eb9be268938643",
+      "gold_key": "b95c7c0e9dde9d7d7e93203eebd11af6",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 20,
+      "id": "A011"
+    },
+    {
+      "question": "What is the primary purpose of a clustering dendrogram?",
+      "reference_answer": "A clustering dendrogram is used to identify the optimal distance threshold for agglomerative clustering. This threshold indicates the distance at which the clustering process should cease further grouping of clusters.",
+      "type": "factual",
+      "gold_chunk_id": "d1180d41acb08b86c97bb5594349fd47",
+      "gold_key": "7677b2479b73244c4277154d414661e3",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 16,
+      "id": "A012"
+    },
+    {
+      "question": "How are partial derivatives like dJ/dy or dJ/dz calculated when you're doing backpropagation?",
+      "reference_answer": "Gradients such as dJ/dy and dJ/dz are computed by backpropagating an earlier gradient, like dJ/da. This involves multiplying the earlier gradient (dJ/da) by the partial derivative of the intermediate variable (a) with respect to the target variable (y or z), following the chain rule.",
+      "type": "conceptual",
+      "gold_chunk_id": "4e609b73af77e24dbec67cfed1514861",
+      "gold_key": "205e95e199a1cca0017f3d3d8bb0fd5b",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 15,
+      "id": "A013"
+    },
+    {
+      "question": "Why do the dimensions of activation matrices (like A0, A1, A2) change to reflect the number of examples being processed, while the dimensions of weight (W) and bias (b) matrices remain the same regardless of how many examples are considered?",
+      "reference_answer": "The passage indicates that activation matrices (e.g., A0, A1, A2) have a second dimension of '1' for one example and 'n' for 'n' examples, meaning they scale with the number of inputs. In contrast, weight (W) and bias (b) matrices maintain constant dimensions (e.g., W1: n1Xn0, b1: n1X1) whether one or multiple examples are processed.",
+      "type": "analytical",
+      "gold_chunk_id": "b7711a2c8a26a9f4c139da416c79d6e3",
+      "gold_key": "a909c330c3a3cad16ddf1f324f836cd2",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 3,
+      "id": "A014"
+    },
+    {
+      "question": "I'm setting up a forward propagation step in my neural network. If I already have the activations from layer l-1 (A_l-1), and I know the weights (W_l), bias (b_l), and activation function (g_l) for layer l, what are the steps to calculate the activations for layer l (A_l)?",
+      "reference_answer": "To calculate the activations A_l for layer l, you first compute Z_l using the formula Z_l = W_l A_{l-1} + b_l. Then, you apply the activation function g_l to Z_l to get A_l, following the formula A_l = g_l(Z_l).",
+      "type": "problem_solving",
+      "gold_chunk_id": "e5666c86e8ee5c600fba6a73a924ed0a",
+      "gold_key": "cb135c90a4adc25d5641efef0f692138",
+      "file_name": "Deep Learning-III (Deep Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR, ",
+      "page": 8,
+      "id": "A015"
+    },
+    {
+      "question": "When trying to find the optimal number of clusters, which specific coefficient is computed for different K values, with the maximum value indicating the best K?",
+      "reference_answer": "The silhouette coefficient is computed for different K values. The value of K for which the silhouette coefficient is maximum is chosen as the optimal number of clusters.",
+      "type": "factual",
+      "gold_chunk_id": "3d1e71b56796e91cc18b12e89047a87c",
+      "gold_key": "608cb0b1b6728c02cb9a992c38374db6",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 13,
+      "id": "A016"
+    },
+    {
+      "question": "When developing models with a fixed budget for finetuning and inference, what design strategy is recommended regarding model parameters and precision, and what is the main benefit of this approach?",
+      "reference_answer": "It is recommended to increase the number of parameters in the base model while decreasing their precision. This strategy is beneficial because it highlights the efficiency advantages offered by QLORA.",
+      "type": "conceptual",
+      "gold_chunk_id": "c51a907dd3c1ad301b87f88739a90f98",
+      "gold_key": "719e159eae2e575885f644272df16662",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 7,
+      "id": "A017"
+    },
+    {
+      "question": "When constructing a matrix from a vector 's', what is the fundamental difference in how a diagonal matrix (where elements of 's' are on the main diagonal) and an outer product 'ssᵀ' (where elements are 'sᵢsⱼ') represent the relationship between the components of 's'?",
+      "reference_answer": "A diagonal matrix uses each component 'sᵢ' independently on its main diagonal, with all other elements being zero. In contrast, the outer product 'ssᵀ' explicitly shows the multiplicative interaction between every pair of components 'sᵢ' and 'sⱼ' (including 'sᵢ' with itself) across all its elements.",
+      "type": "analytical",
+      "gold_chunk_id": "361214d1489366d7effa750f6933883b",
+      "gold_key": "558418beec40b34b94b8b5f5d6146dcb",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 16,
+      "id": "A018"
+    },
+    {
+      "question": "If a large retail company wants to automatically identify distinct groups of customers based on their shopping behaviors, without having any predefined categories in mind, what type of machine learning task would be appropriate for this situation, and what is its primary objective?",
+      "reference_answer": "The company would use cluster analysis, also known as clustering. Its primary objective is to automatically discover natural groupings in the customer data, dividing them into groups where customers within the same group share more similarities with each other than with customers in other groups.",
+      "type": "problem_solving",
+      "gold_chunk_id": "b22bd0f19cc558914ee69fb94dc07e1b",
+      "gold_key": "221ed84b7489a014b4c2ce951a4ecf5f",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 2,
+      "id": "A019"
+    },
+    {
+      "question": "What are the alternative names for the Single Linkage clustering method?",
+      "reference_answer": "The Single Linkage method is also referred to as the nearest neighbor or minimum method.",
+      "type": "factual",
+      "gold_chunk_id": "a10319968c89185e5a2aeec082069738",
+      "gold_key": "5070f4334d8bebfa6ad41404817d4d88",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 6,
+      "id": "A020"
+    },
+    {
+      "question": "What is deep learning, and can you describe what kind of machine learning methods it's based on?",
+      "reference_answer": "Deep learning is a family of machine learning methods often referred to as deep structured learning. It is based on artificial neural networks that incorporate representation learning.",
+      "type": "conceptual",
+      "gold_chunk_id": "b1d3609a65ddaa852b06453befe995c5",
+      "gold_key": "638de08738c3705adaee296b1c198e8c",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 2,
+      "id": "A021"
+    },
+    {
+      "question": "When computing derivatives for backpropagation, the derivative of the loss with respect to the pre-activation output, ∂L/∂z₂, simplifies to ‘a₂ - y’. How does this specific simplified form impact the subsequent calculation of derivatives like ∂L/∂W₂ and ∂L/∂b₂?",
+      "reference_answer": "The simplified form ∂L/∂z₂ = a₂ - y directly influences the calculation of ∂L/∂W₂ and ∂L/∂b₂ by serving as a common multiplicative factor. Specifically, ∂L/∂W₂ becomes (a₂ - y)a₁⁴ and ∂L/∂b₂ becomes (a₂ - y), making these calculations straightforward.",
+      "type": "analytical",
+      "gold_chunk_id": "93787a1179264c4abc00472113038088",
+      "gold_key": "bd682b1044d9abb010eff62754deebb5",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 6,
+      "id": "A022"
+    },
+    {
+      "question": "After an iteration of an algorithm where cluster centroids are updated, if the newly calculated centroids are found to be exactly the same as the centroids from the previous iteration, what is the next step for the algorithm?",
+      "reference_answer": "When there is no change in centroids and clusters after an update, the algorithm will stop.",
+      "type": "problem_solving",
+      "gold_chunk_id": "b587b856bfe11dbdb7c9db5bcfce76ff",
+      "gold_key": "cbd2004e121ec7c5ac9133d7e72c2a6f",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 10,
+      "id": "A023"
+    },
+    {
+      "question": "What type of capabilities does Guanaco display?",
+      "reference_answer": "Guanaco displays surprisingly strong Theory of Mind capabilities.",
+      "type": "factual",
+      "gold_chunk_id": "75b5a737b746dad6a3ff79c3b5dd204d",
+      "gold_key": "84e2a39fa55bc8408f6b11bfdd60a86b",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 13,
+      "id": "A024"
+    },
+    {
+      "question": "Why are activation functions used in neural networks?",
+      "reference_answer": "Activation functions introduce non-linearity into a neuron's output. They perform a non-linear transformation on the input and determine whether a neuron should be activated by calculating a weighted sum and incorporating bias.",
+      "type": "conceptual",
+      "gold_chunk_id": "52580a38a2f8e2686dcf1b029d052e02",
+      "gold_key": "96e42fe9276e0548f206c6daa95b2117",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 2,
+      "id": "A025"
+    },
+    {
+      "question": "If I'm working with a very large dataset, how would the processing time of a grid-based clustering method compare to methods whose time complexity scales with the number of data points? What exactly determines the processing time for grid-based methods?",
+      "reference_answer": "Grid-based methods are advantageous for very large datasets because their processing time is independent of the number of objects. Instead, their processing time is solely determined by the number of cells used in the grid structure.",
+      "type": "analytical",
+      "gold_chunk_id": "7c5ff78aa1c59e192719a7465a56a197",
+      "gold_key": "b817d947a64a55f4e1b5e2629498abc7",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 19,
+      "id": "A026"
+    },
+    {
+      "question": "Imagine a system that automatically groups words that are very similar to each other. How would the words 'condense' and 'condensed' likely be processed, and what is the main reason for this approach?",
+      "reference_answer": "The words 'condense' and 'condensed' would be grouped together. This grouping happens because they have the minimum distance between them, which is a key principle in stemming using hierarchical clustering.",
+      "type": "problem_solving",
+      "gold_chunk_id": "87008ae80850b1516ee099eb372c722f",
+      "gold_key": "52e1c3c25314a518c00c7c0cc7ac337a",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 19,
+      "id": "A027"
+    },
+    {
+      "question": "What are the names of the three gates used in Long Short-Term Memory (LSTM) networks?",
+      "reference_answer": "Long Short-Term Memory (LSTM) networks utilize three distinct gates: the Input gate, the Output gate, and the Forget gate.",
+      "type": "factual",
+      "gold_chunk_id": "4c8128a26f796010e617f5886a6ae736",
+      "gold_key": "7ab6cc7ed60632b1763c798fd995f49b",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 12,
+      "id": "A028"
+    },
+    {
+      "question": "Hey, why is it a problem to initialize all the weights in a neural network to zero? I know it's fine for logistic regression, but what goes wrong for NNs?",
+      "reference_answer": "If all weights in a neural network are initialized to zero, the activations and their derivatives for all neurons in a hidden layer will be identical. This leads to all neurons in that layer modifying weights in the same fashion, making it pointless to have more than one neuron.",
+      "type": "conceptual",
+      "gold_chunk_id": "32643eccfe472ca62eba1dccc679abfb",
+      "gold_key": "cc2b4ca551de68a5cf64c658020e9438",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 9,
+      "id": "A029"
+    },
+    {
+      "question": "I'm trying to understand the different K-Medoid algorithms. Why would the PAM algorithm be less suitable for very large datasets compared to CLARA, based on their computational complexities? What's the main idea behind CLARA's efficiency improvement?",
+      "reference_answer": "The PAM algorithm is computationally expensive with a complexity of O(K(n-K)^2), making it unsuitable for large datasets as it does not scale well. CLARA improves efficiency by applying PAM on random samples, which reduces its computational complexity to O(Ks^2+K(n-K)).",
+      "type": "analytical",
+      "gold_chunk_id": "00037a5f987eae7bee25680e6bcd2239",
+      "gold_key": "c4341726a2395947fc28fd9cb2dc85c9",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 20,
+      "id": "A030"
+    },
+    {
+      "question": "I'm trying to decide on a 13B, 4-bit model to run on a machine with 10 GB of memory. Which model would give me the best performance in terms of the second reported percentage, and how much memory does it use?",
+      "reference_answer": "Among the 13B, 4-bit models that require 10 GB of memory, Guanaco offers the highest performance with 93.4% on the second metric. It requires exactly 10 GB of memory.",
+      "type": "problem_solving",
+      "gold_chunk_id": "a6a635d1de66c4700777cd7c83e1e7c1",
+      "gold_key": "62b383a88707ee9b3f56d244166109a2",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 10,
+      "id": "A031"
+    },
+    {
+      "question": "Why is the Tanh (Hyperbolic Tangent) activation function commonly used in the hidden layers of a neural network?",
+      "reference_answer": "The Tanh function is used in hidden layers because its output values between -1 and 1 help center the data by bringing the mean for the hidden layer close to zero. This process makes learning for the next layer much easier.",
+      "type": "factual",
+      "gold_chunk_id": "b42bf0a494c776e48fdfd053c8404720",
+      "gold_key": "b50f03b046bb2831412abadd184ff659",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 8,
+      "id": "A032"
+    },
+    {
+      "question": "What do different Silhouette Coefficient scores indicate about the quality or characteristics of the clusters?",
+      "reference_answer": "A Silhouette Coefficient score ranges from -1 to +1. A score of +1 indicates highly dense clustering, while -1 suggests incorrect clustering. Scores around zero typically mean there are overlapping clusters, and a higher score generally reflects dense and well-separated clusters.",
+      "type": "conceptual",
+      "gold_chunk_id": "d43c6c3937db89dfd5203e484f1a2685",
+      "gold_key": "15a514249eff5a1f0eb883dfdf57558e",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 6,
+      "id": "A033"
+    },
+    {
+      "question": "Given that Jaccard distance between two strings x and y is defined as 1 − |X ∩ Y |/|X ∪ Y | where X and Y are sets of unique q-grams, why is the Jaccard distance between 'condense' and 'condensed' listed as 0, but the distance between 'condition' and 'conditions' is 0.1428?",
+      "reference_answer": "The Jaccard distance between 'condense' and 'condensed' being 0 implies that their sets of unique q-grams are identical (X = Y). In contrast, the non-zero distance between 'condition' and 'conditions' indicates that while they share many q-grams, their sets are not exactly the same, leading to a smaller |X ∩ Y| compared to |X ∪ Y|.",
+      "type": "analytical",
+      "gold_chunk_id": "122f8ae99189bffa1fe7cbd18d437c73",
+      "gold_key": "dc1218a446fb55de18381c93117487df",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 18,
+      "id": "A034"
+    },
+    {
+      "question": "If I'm trying to build a system that predicts the next word in a sentence as someone types, what kind of neural network would be best for this task, and how does it incorporate past predictions? Also, what's a common issue encountered with these networks?",
+      "reference_answer": "Recurrent Neural Networks (RNNs) are well-suited for predicting the next word in a sentence because they are designed for tasks involving sequential data like words. These networks incorporate past predictions by having layers that receive a time-delayed input from the previous instance prediction, which is stored in the RNN cell. A major challenge with RNNs is the Vanishing Gradient problem, which makes it difficult for them to remember earlier layers’ weights.",
+      "type": "problem_solving",
+      "gold_chunk_id": "b2d689f5e5d032cced6162776c299aac",
+      "gold_key": "7e5eade9769be5f6cc5127a64fcceb35",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 11,
+      "id": "A035"
+    },
+    {
+      "question": "What is the name of the cost function L mentioned in the context of backpropagation?",
+      "reference_answer": "In the context of backpropagation, L denotes the binary cross entropy function.",
+      "type": "factual",
+      "gold_chunk_id": "52f55f194e30a0184cee02790f16a98a",
+      "gold_key": "5d2f538120b217463eb6126365fc0abe",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 5,
+      "id": "A036"
+    },
+    {
+      "question": "Could you explain the process of how the K-means clustering algorithm forms its clusters?",
+      "reference_answer": "The K-means algorithm begins by selecting K initial cluster points. It then repeatedly performs two steps: first, it assigns each data point to its closest cluster center, forming K clusters; second, it recomputes the centroids (mean points) of these newly formed clusters. This iterative process continues until convergence or a set number of iterations.",
+      "type": "conceptual",
+      "gold_chunk_id": "4dde5882f903e262de4e0d53d8062422",
+      "gold_key": "384a08d76ef3cd4ab85d2d3ae1c5fadf",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 3,
+      "id": "A037"
+    },
+    {
+      "question": "What are the main benefits of using NF4 data type compared to FP4 and Int4, and what is the key advantage of applying double quantization in quantized LLMs?",
+      "reference_answer": "NF4 significantly improves performance over FP4 and Int4 data types. Double quantization offers the key advantage of reducing the memory footprint without degrading performance.",
+      "type": "analytical",
+      "gold_chunk_id": "21c18cc66fadd0687722bdedfd72d826",
+      "gold_key": "a2f3cf79f96a10e112b4d82d88e9e0b4",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 6,
+      "id": "A038"
+    },
+    {
+      "question": "I'm working on a neural network project and decided to use the ReLU activation function. During training, I've noticed that some of my neurons seem to become 'dead' – their weights and biases stop updating completely. What might be a reason for this specific problem with ReLU?",
+      "reference_answer": "This issue is known as the Dying ReLU problem. It occurs because the negative side of the ReLU graph results in a zero gradient, which prevents the weights and biases for those neurons from being updated during the backpropagation process. Consequently, these neurons become inactive and never get activated.",
+      "type": "problem_solving",
+      "gold_chunk_id": "5650480b4c231f4df0815a3b7098b78b",
+      "gold_key": "4e43e52daddce74cef549af3d3e06da4",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 11,
+      "id": "A039"
+    },
+    {
+      "question": "In hierarchical-based methods, how do agglomerative methods initially treat the objects?",
+      "reference_answer": "In agglomerative methods, each object is initially considered a cluster on its own.",
+      "type": "factual",
+      "gold_chunk_id": "7015e0d0dec71d3bc341530a131b67b5",
+      "gold_key": "4d2f42cd8a78c1cfb5016e3c322e1134",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 17,
+      "id": "A040"
+    },
+    {
+      "question": "How does the hierarchical agglomerative clustering algorithm begin, and what is its primary operation in the steps that follow?",
+      "reference_answer": "The algorithm starts by treating each individual data point as a separate cluster. In the subsequent steps, it continuously merges the most similar clusters and then updates the distance between the new cluster and each of the old clusters.",
+      "type": "conceptual",
+      "gold_chunk_id": "1c9d6cc350c4819dadf5652dd2ebad9a",
+      "gold_key": "2f5159c5e5a7ff0a820bc92d8ea1b120",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 3,
+      "id": "A041"
+    },
+    {
+      "question": "When determining the total number of layers or the depth of a neural network, why is the input layer excluded from the count, unlike the hidden and output layers?",
+      "reference_answer": "The input layer's primary role is to collect input patterns, while hidden layers process data by fine-tuning weights and extracting features, and the output layer provides classifications. The established convention for computing a neural network's depth or total layers is to count only the processing (hidden) and output layers, not the input layer.",
+      "type": "analytical",
+      "gold_chunk_id": "b99b01071c0275c8582084ff3a6bfd33",
+      "gold_key": "6b5eaba7b3a289e311f72a242c10fe2a",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 6,
+      "id": "A042"
+    },
+    {
+      "question": "When performing backpropagation for a neural network with 'n' training examples, how is the gradient of the cost function with respect to the bias term b2 calculated?",
+      "reference_answer": "For 'n' examples, the gradient of the cost function J with respect to b2 (denoted as db2) is found by taking (1/n) multiplied by the sum of dz2 along axis 1, ensuring dimensions are kept. Here, dz2 is equivalent to the difference between the activated output A2 and the true labels Y.",
+      "type": "problem_solving",
+      "gold_chunk_id": "545a132cb9bf12d24c44ecec7474eff5",
+      "gold_key": "4e304d892dd0bae88dae68c3e3f548ac",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 8,
+      "id": "A043"
+    },
+    {
+      "question": "Who were the individuals that proposed the PAM algorithm?",
+      "reference_answer": "The PAM algorithm was proposed by Kaufmann and Rousseeuw.",
+      "type": "factual",
+      "gold_chunk_id": "33de8185b844b1007d7e2c33599129ae",
+      "gold_key": "5b071d03039f01b620538f501103ee94",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 19,
+      "id": "A044"
+    },
+    {
+      "question": "How is the Guanaco 33B model more memory-efficient than Vicuna 13B, despite having a greater number of parameters?",
+      "reference_answer": "Guanaco 33B achieves greater memory efficiency (21 GB footprint compared to Vicuna 13B's 26 GB) by utilizing 4-bit precision for its weights. This approach allows it to reduce its memory footprint while also delivering a performance improvement.",
+      "type": "conceptual",
+      "gold_chunk_id": "66a58ca745699d86bae4d05c787d7b38",
+      "gold_key": "34ff9cb77bc1b060d987af83b1a61b73",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 9,
+      "id": "A045"
+    },
+    {
+      "question": "What makes the Sigmoid activation function particularly suitable for the output layer in a binary classification model, and how does its output range simplify the prediction of a 0 or 1 outcome?",
+      "reference_answer": "The Sigmoid activation function is suitable for binary classification because its output values always fall between 0 and 1. This characteristic allows for straightforward prediction: if the function's output is greater than 0.5, the result can be easily predicted as 1, and otherwise as 0.",
+      "type": "analytical",
+      "gold_chunk_id": "16d86917360eebc00e141dc931349154",
+      "gold_key": "369f92b37afaa6ad639b4a57c6aef99f",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 5,
+      "id": "A046"
+    },
+    {
+      "question": "I'm trying to group data points that form really weird, non-circular shapes, and I also need a method that can combine groups if they're close enough. Which type of clustering approach would be good for this, and how does it generally decide to expand a cluster?",
+      "reference_answer": "Density-based methods are ideal for finding clusters of arbitrary shapes and have the ability to merge two clusters. These methods keep growing a cluster as long as the number of data objects in its neighborhood exceeds a certain threshold value.",
+      "type": "problem_solving",
+      "gold_chunk_id": "0bc65b9cd5364d642620c89305a5e0ee",
+      "gold_key": "e947eef8ee63c1c8484c6e0fa750a6fc",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 18,
+      "id": "A047"
+    },
+    {
+      "question": "What type of input is needed for the Agglomerative Clustering algorithm?",
+      "reference_answer": "The Agglomerative Clustering algorithm requires a distance matrix as input. This matrix should be of order nxn and contain the distances between n objects.",
+      "type": "factual",
+      "gold_chunk_id": "99cd2171870c07c50e4e113b3808738c",
+      "gold_key": "6aadc0b9e2bcc87de8b32827cc857736",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 4,
+      "id": "A048"
+    },
+    {
+      "question": "what is a neural network for and how is it like a brain?",
+      "reference_answer": "A neural network aims to identify underlying relationships in data through a process that mimics the human brain. It does this by using a series of algorithms and systems of neurons to collect and classify information.",
+      "type": "conceptual",
+      "gold_chunk_id": "efdc45684b80b86ddefa56aac0f45db6",
+      "gold_key": "8ce27301b5900cf23257e8f80a32eb0e",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 4,
+      "id": "A049"
+    },
+    {
+      "question": "When performing forward propagation, what is the main difference in how the input data and intermediate calculations (like `z1` and `a1`) are represented in the equations when comparing a single example to 'n' examples? What is notable about how the bias term (`b1`) is represented in both scenarios?",
+      "reference_answer": "For a single example, input data (`a0`) and intermediate calculations (`z1`, `a1`) are represented by lowercase variables. For 'n' examples, these are represented by uppercase variables (`A0`, `Z1`, `A1`). It is notable that the bias term (`b1`) maintains its lowercase representation in the equations for both a single example and 'n' examples.",
+      "type": "analytical",
+      "gold_chunk_id": "8de36f3e4e9058b005102718fc5dd9be",
+      "gold_key": "b63f305f96617c7d453fae27ee5516f8",
+      "file_name": "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR",
+      "page": 4,
+      "id": "A050"
+    },
+    {
+      "question": "I need to sort a lot of customer data into different groups based on their behavior, but my computer can't handle trying every single possible way to group them to find the perfect solution. What types of algorithms are typically used for this kind of task when you need a more realistic, practical approach instead of an exhaustive search?",
+      "reference_answer": "For grouping large datasets where an exhaustive search for the global optimum is not feasible, partitioning-based algorithms often employ heuristic (greedy) methods. Examples of these practical methods include K-Means, K-Medians, and K-Medoids.",
+      "type": "problem_solving",
+      "gold_chunk_id": "0892193d56ef32c9c824b824260907b4",
+      "gold_key": "819e38474008517fcd0dc7cb7c87e4ee",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 2,
+      "id": "A051"
+    },
+    {
+      "question": "What is instruction finetuning?",
+      "reference_answer": "Instruction finetuning is a method used to help a pretrained Large Language Model follow instructions given in a prompt. It involves finetuning the LLM using input-output pairs from diverse data sources to enable it to generate the correct output for a given input.",
+      "type": "factual",
+      "gold_chunk_id": "922e00faedb7219bef67f8d3b95eb1b2",
+      "gold_key": "d8a3400ac19fa842b30f1750a6974e18",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 14,
+      "id": "A052"
+    },
+    {
+      "question": "Can you explain why the ReLU activation function is considered more computationally efficient than other functions like tanh and sigmoid?",
+      "reference_answer": "The Rectified Linear Unit (ReLU) is more computationally efficient because it uses simpler mathematical operations. This also results in only a few neurons being activated at any given time, making the network sparse and simplifying computation.",
+      "type": "conceptual",
+      "gold_chunk_id": "926b7c9aa6fddde597ada468cb49cd66",
+      "gold_key": "807db5e565fa71819c0353121232b3ee",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 10,
+      "id": "A053"
+    },
+    {
+      "question": "What is the main reason the Adjusted Rand Index (ARI) was created, and what specific limitation of the original Rand Index (RI) does it aim to overcome?",
+      "reference_answer": "The Adjusted Rand Index (ARI) was developed because the original Rand Index (RI) has a drawback: it can produce high values even for random partitions of a given set of examples. ARI addresses this by adjusting its calculations to account for grouping by chance, providing a more accurate measure.",
+      "type": "analytical",
+      "gold_chunk_id": "09acda48f7a79f8de7afd0cb26ac4d2d",
+      "gold_key": "02540e59fd17d85410024342b8ed46a0",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 10,
+      "id": "A054"
+    },
+    {
+      "question": "I'm trying to figure out the distance between two clusters, Cluster X and Cluster Y. Cluster X has 20 data points and its centroid is Cx. Cluster Y has 15 data points and its centroid is Cy. If I already know the distance between Cx and Cy, how would I calculate the distance between Cluster X and Cluster Y using both the Centroid Linkage method and the Grouped Average Agglomerative Clustering (GAAC) method based on what I've learned?",
+      "reference_answer": "For the Centroid Linkage method, the distance between Cluster X and Cluster Y is simply the distance between their centroids, Cx and Cy. For Grouped Average Agglomerative Clustering (GAAC), the calculation uses the formula: `(Nx * distance(Cx, Cy) + Ny * distance(Cx, Cy)) / (Nx + Ny)`. With the given numbers, this becomes `(20 * distance(Cx, Cy) + 15 * distance(Cx, Cy)) / (20 + 15)`, which simplifies to just `distance(Cx, Cy)`. Thus, both methods yield the same distance based on the provided definitions.",
+      "type": "problem_solving",
+      "gold_chunk_id": "e4cf168382daf19c15e8f10b8bd05be7",
+      "gold_key": "4a1f15ee19472c164bf152bea4e9175a",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 9,
+      "id": "A055"
+    },
+    {
+      "question": "In computational graphs, what is the term for the process of moving from left-to-right to compute the value of a mathematical expression?",
+      "reference_answer": "When moving forward in a computational graph, from left-to-right, to calculate the value of a mathematical expression, this process is called Forward Propagation. It is used to determine the overall value of the expression.",
+      "type": "factual",
+      "gold_chunk_id": "ce4d91a4b13195d3594a7ec338c0cec6",
+      "gold_key": "4cabbaa743984494d2b39e608ce00e11",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 14,
+      "id": "A056"
+    },
+    {
+      "question": "Why does the Sum of Squared Error (SSE) always go down when new cluster centers are recalculated in the K-Means algorithm?",
+      "reference_answer": "The SSE strictly decreases because the new center of a cluster is derived from the average of all its data points. This specific calculation is designed to minimize the SSE for that particular cluster.",
+      "type": "conceptual",
+      "gold_chunk_id": "28253f52b2c64c7a59b18627c632f2d9",
+      "gold_key": "d9d40e5f225222861fcd6837819d220c",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 11,
+      "id": "A057"
+    },
+    {
+      "question": "When converting a 32-bit floating point tensor to an 8-bit integer tensor by normalizing with the absolute maximum of the input elements, what issue can occur regarding the utilization of quantization bins if there are outliers (large magnitude values) in the input?",
+      "reference_answer": "If a large magnitude value, or outlier, is present in the input tensor, the quantization bins may not be utilized efficiently. This means that certain bit combinations (bins) might be poorly used, or even have few to no numbers quantized into them.",
+      "type": "analytical",
+      "gold_chunk_id": "c26ddd7d55c5d6d1ddf9dafdff1562e6",
+      "gold_key": "8eb55bc50a23c7720224dca2d907416b",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 3,
+      "id": "A058"
+    },
+    {
+      "question": "I'm working on a neural network and it's having trouble with 'dead neurons,' even after I tried using Leaky ReLU. It seems like some important information isn't getting propagated through the layers. What's another activation function I could explore that specifically addresses the issue of zero gradients for negative inputs, and how does it generally work?",
+      "reference_answer": "You could consider using the Parametric ReLU (PReLU) activation function. It's often used when Leaky ReLU fails to resolve the dead neuron problem and relevant information isn't successfully passed. PReLU works by introducing a slope parameter 'a' for negative input values, ensuring that the gradient for these values is 'a' instead of zero, thereby helping to mitigate the issue of vanishing gradients.",
+      "type": "problem_solving",
+      "gold_chunk_id": "e100b66f513dd4bef4a587fb9582e1d0",
+      "gold_key": "93a2b04fdfb0015fbce663303cf31cd9",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 13,
+      "id": "A059"
+    },
+    {
+      "question": "Can you give me examples of partitioning-based clustering methods?",
+      "reference_answer": "K-means and CLARANS (Clustering Large Applications based upon Randomized Search) are examples of partitioning-based methods.",
+      "type": "factual",
+      "gold_chunk_id": "f0c56e9d4987d0845da6656b2678b6f7",
+      "gold_key": "04b4cd5cb5b62e60dc8d903dc04c98a1",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 16,
+      "id": "A060"
+    },
+    {
+      "question": "What are some advantages of using hierarchical clustering when compared to partitioning methods for grouping data?",
+      "reference_answer": "Hierarchical clustering offers several advantages, including not needing to specify the number of clusters (K) in advance. It also does not require iterative refinement and is considered more deterministic than partitioning methods.",
+      "type": "conceptual",
+      "gold_chunk_id": "70ad3394ab2ea935b1047987c751a8d4",
+      "gold_key": "1bf77d39610a62f96eb42f0b05e9e562",
+      "file_name": "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET",
+      "page": 2,
+      "id": "A061"
+    },
+    {
+      "question": "When implementing logistic regression as a single-layer, single-neuron neural network, what is the primary role of gradient descent optimization in learning the parameters (like w1, w2, and b), and how does this process unfold iteratively?",
+      "reference_answer": "Gradient descent optimization is essential for learning the parameters (w1, w2, and b) required to fit the hypothesis function. This learning occurs through an iterative process where, in each step, the predicted value is first calculated via forward propagation, and then gradients are computed to guide the parameter updates.",
+      "type": "analytical",
+      "gold_chunk_id": "23630d3ec160bae0d6598d1e4191712c",
+      "gold_key": "a264dfe671d322cd8092f663acf62e4f",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 17,
+      "id": "A062"
+    },
+    {
+      "question": "I'm trying to determine the optimal number of clusters for my dataset using a popular technique where I calculate the sum of squared deviations for various potential cluster counts. How should I identify the best number of clusters from these calculations?",
+      "reference_answer": "When using this method, you should identify the 'elbow' point. This is the specific value of K where the distortion or inertia begins to decrease in a linear fashion. That K value represents the optimal number of clusters for your data.",
+      "type": "problem_solving",
+      "gold_chunk_id": "87f95565305273ac036e5fce8c97ab45",
+      "gold_key": "0a8cf08668bb7207df5f8d8af7bd5687",
+      "file_name": "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ",
+      "page": 12,
+      "id": "A063"
+    },
+    {
+      "question": "What is the Elo rating for the ChatGPT model in the competition between models?",
+      "reference_answer": "The Elo rating for the ChatGPT model is 966 ± 1.",
+      "type": "factual",
+      "gold_chunk_id": "455037d0708a3dba0a12abffc8d18fd0",
+      "gold_key": "92bb4911fed5443cc96431c495ee6036",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 2,
+      "id": "A064"
+    },
+    {
+      "question": "Could you explain the formula for the derivative of a softmax output `s_i` with respect to an input `z_k`? How does the formula change depending on whether `i` and `k` are the same or different indices?",
+      "reference_answer": "When the indices `i` and `k` are the same, the derivative of `s_i` with respect to `z_k` is `s_i * (1 - s_i)`. If `i` and `k` are different, the derivative is `-s_i * s_k`.",
+      "type": "conceptual",
+      "gold_chunk_id": "509d27c1d5d73333d601f03879474815",
+      "gold_key": "01a0d3ac3550bfd04155bec7b3c76c75",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 15,
+      "id": "A065"
+    },
+    {
+      "question": "When calculating the Dunn index, how does using the ratio of the minimum distance between objects in different clusters to the maximum distance between objects within the same cluster help assess whether the clusters are compact and well-separated?",
+      "reference_answer": "The Dunn index aims for a higher value to indicate better clustering. By using the minimum inter-cluster separation as the numerator, it emphasizes that clusters should be far apart from their closest neighbors. The maximum intra-cluster distance (diameter) as the denominator ensures that even the most spread-out points within any single cluster contribute to reducing the overall index, thus favoring truly compact and well-separated clusters.",
+      "type": "analytical",
+      "gold_chunk_id": "d9264dd7b63feb862865cca589c3e52d",
+      "gold_key": "de5c586af603d79347a1ef16522a5aa9",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 7,
+      "id": "A066"
+    },
+    {
+      "question": "If I'm building a system to automatically sort a large dataset of images into different categories, which type of neural network is generally considered the most effective for this kind of image classification task, and what makes it well-suited for processing visual information?",
+      "reference_answer": "Convolutional Neural Networks (CNNs) are the most used neural networks for image classification because they contain multiple convolution layers. These layers are responsible for extracting important features from images, with earlier layers focusing on low-level details and later layers capturing more high-level features.",
+      "type": "problem_solving",
+      "gold_chunk_id": "dfab13739fcd22d350dfaa4a3dcc78f0",
+      "gold_key": "abe2d121f17ed412dfc29ad0b65cf913",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 10,
+      "id": "A067"
+    },
+    {
+      "question": "What year was Al Jolson born?",
+      "reference_answer": "Al Jolson was born in the year 1886.",
+      "type": "factual",
+      "gold_chunk_id": "8ede2d883cb65ad141d19d1e6b5471d2",
+      "gold_key": "f18d778e043549d8d8002e76e5e74a03",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 11,
+      "id": "A068"
+    },
+    {
+      "question": "How does using a one-hot vector for 'y' simplify the multiplication with the derivative matrix during back-propagation for the softmax function?",
+      "reference_answer": "When 'y' is a one-hot vector, it means only one of its entries is non-zero. This property simplifies the calculation because during the multiplication with the derivative matrix, only the column corresponding to that single non-zero entry in 'y' will be effectively used.",
+      "type": "conceptual",
+      "gold_chunk_id": "ecd0f36a224bc2d126ea80537213570d",
+      "gold_key": "488f8ffa2f5f9aca20f6967757a3213c",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 19,
+      "id": "A069"
+    },
+    {
+      "question": "If one clustering algorithm achieves a Rand Index of 0.92 and another achieves a Rand Index of 0.35, what does this difference in scores tell us about how each algorithm's groupings compare to the ground truth class labeling?",
+      "reference_answer": "A higher Rand Index score indicates greater similarity between the clustering assignment and the ground truth class labeling. Therefore, an algorithm with a score of 0.92 is performing much better, as its results are significantly closer to the ground truth compared to an algorithm with a score of 0.35.",
+      "type": "analytical",
+      "gold_chunk_id": "bfa180f515d7584c6ada61f1f612b266",
+      "gold_key": "d694bbc59adb672a89a83ea2bfdf9456",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 8,
+      "id": "A070"
+    },
+    {
+      "question": "If a neural network design incorporates three hidden layers and updates its internal weights through optimizers during its training phase, how would you categorize its depth and learning method?",
+      "reference_answer": "A network with three hidden layers would be considered a deep neural network. Its learning method is supervised, as weights are updated by optimizers.",
+      "type": "problem_solving",
+      "gold_chunk_id": "0cb73040a5adddef63874185cf1eedb1",
+      "gold_key": "3159501a56dd344d21d5b50d5dfbffba",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 9,
+      "id": "A071"
+    },
+    {
+      "question": "What is the GPU memory requirement for regular 16-bit finetuning of a LLaMA 65B parameter model?",
+      "reference_answer": "Regular 16-bit finetuning of a LLaMA 65B parameter model requires more than 780 GB of GPU memory.",
+      "type": "factual",
+      "gold_chunk_id": "0551ba446a025a5b7e2d754ae6d49872",
+      "gold_key": "72faf22eb3d9c8212638d03e227f9f95",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 1,
+      "id": "A072"
+    },
+    {
+      "question": "How does the specific range of the sigmoid activation function's derivative contribute to the phenomenon of vanishing gradients during the backpropagation process?",
+      "reference_answer": "The derivative of the sigmoid function has a maximum value of 0.25 and its range is always between 0 and 0.25. When these small derivatives are multiplied together layer by layer during backpropagation, the gradients can exponentially shrink, often becoming very tiny or close to zero, leading to the vanishing gradient problem.",
+      "type": "conceptual",
+      "gold_chunk_id": "04a569a09acc68c3be96f2ce0e36d227",
+      "gold_key": "4408d2cd8560899b920ebe284ecef7c7",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 6,
+      "id": "A073"
+    },
+    {
+      "question": "Purity is described as an external evaluation criterion for cluster quality. What is a key implication of purity being an external evaluation criterion when deciding whether to use it to assess a clustering model?",
+      "reference_answer": "Since purity is an external evaluation criterion, its calculation relies on knowing the true underlying clusters (ground truth). Therefore, purity can only be used to evaluate a clustering model when this ground truth information for the data points is available.",
+      "type": "analytical",
+      "gold_chunk_id": "286ca7c8d09da9e19b07d1fffd1995fc",
+      "gold_key": "72d10f4a78333dfebf246a24c0e119ad",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 13,
+      "id": "A074"
+    },
+    {
+      "question": "I need to build a simple model to classify emails as either 'spam' or 'not spam' based on their content. What is the most basic and oldest type of neural network I could use for this binary classification problem, and what are its key characteristics?",
+      "reference_answer": "For a binary classification task like identifying spam, the Perceptron is the most basic and oldest type of neural network you could use. It consists of just one neuron that takes input and applies an activation function to produce a binary output, and it does not contain any hidden layers.",
+      "type": "problem_solving",
+      "gold_chunk_id": "11853c7d696cb7245ae490c6f74d6f57",
+      "gold_key": "6109aa9a0c9af9b7193e4f91e4718b8a",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 7,
+      "id": "A075"
+    },
+    {
+      "question": "Which data type is considered superior to FP4 in terms of quantization precision?",
+      "reference_answer": "NF4 is considered superior to FP4 in terms of quantization precision. The results show that NF4 is more effective than FP4.",
+      "type": "factual",
+      "gold_chunk_id": "87e317b536348b809198b6bb7c28bff4",
+      "gold_key": "a2303dba85f89ff773dc05edc79560a7",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 7,
+      "id": "A076"
+    },
+    {
+      "question": "Why is the Tanh activation function often preferred over the sigmoid activation function, even though both can experience the vanishing gradient problem?",
+      "reference_answer": "Tanh is generally preferred because it is zero-centered, which allows its gradients to move in various directions without being restricted. This makes tanh nonlinearity more effective in practical applications compared to sigmoid.",
+      "type": "conceptual",
+      "gold_chunk_id": "b1041a73ff45ec93174290bd7a0a9f86",
+      "gold_key": "d6976fedf33a2738dadc70f473101591",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 9,
+      "id": "A077"
+    },
+    {
+      "question": "Imagine a scenario where a clustering method groups examples A, B, and C together, and D and E together. However, the true grouping (ground truth) is A and B together, and C, D, and E together. How does identifying pairs like {A, B} and {D, E} as 'always grouped together' by both the clustering method and the ground truth impact the initial steps of calculating the Rand Index?",
+      "reference_answer": "When calculating the Rand Index, pairs of examples that are grouped together by both the clustering method and the ground truth contribute to the 'A' value. In the given scenario, pairs {A, B} and {D, E} are identified as such, leading to an 'A' value of two, which is a component in the overall Rand Index computation.",
+      "type": "analytical",
+      "gold_chunk_id": "b3fc3932a011efc89e4c8a3b0e7e9a96",
+      "gold_key": "1ad08b6d93521d9ef1c31e3ac8457b45",
+      "file_name": "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES",
+      "page": 9,
+      "id": "A078"
+    },
+    {
+      "question": "What is a computational graph used for, and what are its key components?",
+      "reference_answer": "A computational graph is a way to represent a mathematical function using graph theory. Its main components are nodes, which can be input values or functions that combine values, and edges, which receive weights as data flows through the graph.",
+      "type": "problem_solving",
+      "gold_chunk_id": "80da4680d6c59ef134d981e090003513",
+      "gold_key": "128e1c422c6c42d2fe9a88b10e2460a1",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 13,
+      "id": "A079"
+    },
+    {
+      "question": "How does Low-rank Adapter (LoRA) finetuning reduce memory requirements?",
+      "reference_answer": "Low-rank Adapter (LoRA) finetuning reduces memory requirements by utilizing a small set of trainable parameters, often called adapters, while ensuring that the full model parameters remain fixed.",
+      "type": "factual",
+      "gold_chunk_id": "dcd51a466fad066282229065adff1f6f",
+      "gold_key": "2b6703d73b3e3c38fdf35f3fda8f2d69",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 3,
+      "id": "A080"
+    },
+    {
+      "question": "Can you explain why sigmoid neurons might stop learning when their inputs are very large positive or negative values?",
+      "reference_answer": "When the inputs to a sigmoid function are extremely large positive or negative, the outputs saturate near 1 or 0. In this saturated region, the derivative becomes almost zero, which causes the gradient to vanish. This vanishing gradient prevents the neurons from learning effectively.",
+      "type": "conceptual",
+      "gold_chunk_id": "45a6893b83213568a4da6ea15ccf31ee",
+      "gold_key": "5095cf17384b1cdc462f012217b2930e",
+      "file_name": "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ",
+      "page": 7,
+      "id": "A081"
+    },
+    {
+      "question": "In the backpropagation process for logistic regression, the partial derivative of the loss function with respect to 'z' simplifies to 'a-y'. What is the significance of this simplification, and how does it influence the subsequent calculations for the partial derivatives of the loss with respect to 'w1', 'w2', and 'b'?",
+      "reference_answer": "The simplification of the partial derivative of the loss function with respect to 'z' to 'a-y' is significant because this concise term directly propagates to calculate the gradients for the weights and bias. Specifically, it allows the partial derivatives for 'w1', 'w2', and 'b' to be computed as (a-y)x1, (a-y)x2, and (a-y) respectively, streamlining the backpropagation update.",
+      "type": "analytical",
+      "gold_chunk_id": "213633004729f6cda2508a701fff6124",
+      "gold_key": "6e28f8d12755e7fc98fdeab091250b0d",
+      "file_name": "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre",
+      "page": 19,
+      "id": "A082"
+    },
+    {
+      "question": "I'm looking for details on a paper related to 'Constitutional AI.' Can you tell me who the primary author is and the publication year for that work?",
+      "reference_answer": "The primary author for the paper on 'Constitutional AI' is Y. Bai, and it was published in 2022.",
+      "type": "problem_solving",
+      "gold_chunk_id": "ca22fe1f15de697022fdafa5aa4830ca",
+      "gold_key": "3e6ef48309c149a4513e682b2628df70",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 17,
+      "id": "A083"
+    },
+    {
+      "question": "Which instruction-following datasets mentioned in the course materials were obtained through crowd-sourcing?",
+      "reference_answer": "According to the course materials, OASST1 and HH-RLHF are instruction-following datasets obtained through crowd-sourcing.",
+      "type": "factual",
+      "gold_chunk_id": "6190a2022608d8bf316273066af9d02c",
+      "gold_key": "7a1c46aa54affef7237849323c9d904f",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 8,
+      "id": "A084"
+    },
+    {
+      "question": "Can you explain how QLoRA utilizes different data types during its operations, specifically for the forward and backward pass, and for calculating weight gradients?",
+      "reference_answer": "QLoRA employs a 4-bit NormalFloat for storage and a 16-bit BrainFloat for computation. To perform the forward and backward pass, the storage data type is dequantized to the computation data type. Weight gradients are exclusively computed for the LoRA parameters, which use the 16-bit BrainFloat.",
+      "type": "conceptual",
+      "gold_chunk_id": "d119523a7254bbf62f2ce99384323d54",
+      "gold_key": "20b8f397f4172d3c83cd2ed922176172",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 5,
+      "id": "A085"
+    },
+    {
+      "question": "How does dynamically moving optimizer states between CPU and GPU memory help when the GPU runs out of memory, and what is the main outcome or advantage of this approach?",
+      "reference_answer": "This approach addresses GPU out-of-memory by automatically moving optimizer states to CPU RAM when needed and paging them back to GPU memory for optimizer update steps. The main advantage is ensuring error-free GPU processing even when the GPU occasionally runs out of memory.",
+      "type": "analytical",
+      "gold_chunk_id": "f2f45f9d4994de4df197f5e410605d5b",
+      "gold_key": "f8b18a5bc2fed52fb41b7a6d3b02e3f6",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 5,
+      "id": "A086"
+    },
+    {
+      "question": "When evaluating how well a machine learning model performs, what's a major concern with just looking at the summary statistics or scores from a benchmark? And what's one way to help address that concern?",
+      "reference_answer": "A major concern with only looking at summary statistics is benchmark validity, meaning the benchmark might not truly test what it's supposed to, especially if models find 'shortcuts' to solve it. Performing some qualitative analysis can help alleviate this issue.",
+      "type": "problem_solving",
+      "gold_chunk_id": "71a02fd96db08f0812e393e00c0b6ada",
+      "gold_key": "2b066d1275fef680597cf6b867f7320d",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 10,
+      "id": "A087"
+    },
+    {
+      "question": "How many tokens is QLORA estimated to finetune per night on an iPhone 12 Plus?",
+      "reference_answer": "It is estimated that with an iPhone 12 Plus, QLORA can finetune 3 million tokens per night while the phone is charging.",
+      "type": "factual",
+      "gold_chunk_id": "009b4f0780f727fe3bc06b5cbb39a7fc",
+      "gold_key": "816d8da85efe0c1da900a22f8737ba73",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 16,
+      "id": "A088"
+    },
+    {
+      "question": "Does 4-bit adapter finetuning help recover performance compared to a 16-bit finetuning baseline, and what evidence supports this?",
+      "reference_answer": "Yes, 4-bit adapter methods have been observed to replicate the performance of a fully finetuned 16-bit baseline. This finding was made when testing RoBERTA and T5 models on GLUE and Super-NaturalInstructions datasets.",
+      "type": "conceptual",
+      "gold_chunk_id": "56802a9ecc54d90cd45a1f4fd5ec1743",
+      "gold_key": "a9fbb2d4d06889a2a9105b630325e225",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 7,
+      "id": "A089"
+    },
+    {
+      "question": "A study explores how models respond to specific adversarial prompts, categorizing outcomes as 'lemons' (model broken) or 'cherries' (model not broken). The researchers acknowledge that their approach isn't comprehensive and relies on a selection of representative samples because the full range of possible model responses is very large. What is a potential limitation or consequence of this reliance on representative samples rather than a comprehensive analysis?",
+      "reference_answer": "Relying on representative samples means the study might not fully capture the entire distribution of responses a model can generate. This could lead to an incomplete understanding of all the ways a model can be broken or how robust it is against adversarial prompting, as it cannot control for all variables involved.",
+      "type": "analytical",
+      "gold_chunk_id": "29fe336af6bee8f1b6d80efd427cb39e",
+      "gold_key": "e9148cea5ed3244a3851e1d327ec04fc",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 11,
+      "id": "A090"
+    },
+    {
+      "question": "I'm working with large language models like GPTs and need to make them more efficient to run after they've already been trained. Is there a specific technique mentioned that focuses on keeping them accurate while achieving this post-training efficiency?",
+      "reference_answer": "Yes, GPTQ is an accurate post-training quantization method developed for generative pre-trained transformers, as presented by Frantar et al. in 2022.",
+      "type": "problem_solving",
+      "gold_chunk_id": "fddcaf1e5c91766b838e015846fa079a",
+      "gold_key": "880e6550010ed23bee79acabe33de572",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 18,
+      "id": "A091"
+    },
+    {
+      "question": "How many NLP tasks are addressed in the Super-naturalinstructions paper by Y. Wang and colleagues?",
+      "reference_answer": "The Super-naturalinstructions paper, authored by Y. Wang et al., addresses over 1600 natural language processing tasks.",
+      "type": "factual",
+      "gold_chunk_id": "fe08748ac0a9f7501360359d8c50137e",
+      "gold_key": "2b0219ead3e952bd7b92f19d8fb47779",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 20,
+      "id": "A092"
+    },
+    {
+      "question": "What is prefix-tuning used for?",
+      "reference_answer": "Prefix-tuning is a method designed for optimizing continuous prompts, particularly for tasks involving generation.",
+      "type": "conceptual",
+      "gold_chunk_id": "e3596c1960cd1cd90e77fdb87ba0ddc3",
+      "gold_key": "0a83bad91ec18f30df6ab90a1932d59a",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 18,
+      "id": "A093"
+    },
+    {
+      "question": "Can you explain how the Guanaco model performs differently on straightforward factual recall questions versus more obscure ones? What's a potential issue with its responses to the difficult questions?",
+      "reference_answer": "For simple factual recall questions, the Guanaco model consistently provides correct answers. However, when questions become more obscure, the model becomes unreliable. A potential issue is that Guanaco maintains its confidence even when its answers are incorrect or unreliable.",
+      "type": "analytical",
+      "gold_chunk_id": "06c32346cb4f6f8a803788f0288381f5",
+      "gold_key": "55569985af18c64172babb3f112b27d2",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 11,
+      "id": "A094"
+    },
+    {
+      "question": "I'm trying to pick a language model for a project where minimizing overall bias is crucial. Given evaluation results where a lower score indicates less bias, which of these models—LLaMA-65B, GPT-3, OPT-175B, or Guanaco-65B—shows the lowest average likelihood of generating biased sequences?",
+      "reference_answer": "Guanaco-65B demonstrates the lowest average likelihood of generating biased sequences, with an average score of 43.5. This is considerably lower than LLaMA-65B (66.6), GPT-3 (67.2), and OPT-175B (69.5).",
+      "type": "problem_solving",
+      "gold_chunk_id": "92f21b86fe7092a3fe58b0495dc81b34",
+      "gold_key": "53644dff21b04b46a96dbdb910f6b569",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 15,
+      "id": "A095"
+    },
+    {
+      "question": "What method is recommended to avoid issues with grounding an absolute scale, and what kind of judgments is this method based on?",
+      "reference_answer": "The Elo ranking method is recommended to avoid issues with grounding an absolute scale. This method is based on pairwise judgments from human annotators and GPT-4.",
+      "type": "factual",
+      "gold_chunk_id": "bacf31322338568e39e4b72242488e67",
+      "gold_key": "9efca7ff98e17f54d6990e23233c08ae",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 9,
+      "id": "A096"
+    },
+    {
+      "question": "Why would an AI language model like Guanaco be unable to tell you the current time or where it is physically located?",
+      "reference_answer": "AI language models like Guanaco lack access to real-time information. Their responses are generated from pre-existing knowledge, meaning they cannot provide current details such as the present time or their physical whereabouts.",
+      "type": "conceptual",
+      "gold_chunk_id": "32ab05eee0642dc4d60ef217dabb7d21",
+      "gold_key": "da869f7eb43ca2e18903e0f98458250f",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 12,
+      "id": "A097"
+    },
+    {
+      "question": "Can you explain why Double Quantization is needed to achieve memory savings, especially when using a small blocksize for 4-bit quantization?",
+      "reference_answer": "Double Quantization is needed because a small blocksize, while essential for precise 4-bit quantization, results in a considerable memory overhead due to the quantization constants. This process helps reduce that memory footprint by further quantizing those constants.",
+      "type": "analytical",
+      "gold_chunk_id": "46a69008de8fef83936e7d93421b716d",
+      "gold_key": "a55c69ba7817457aa4f226416a414b75",
+      "file_name": "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗ Ar",
+      "page": 5,
+      "id": "A098"
+    }
+  ],
+  "assignment": [
+    {
+      "question": "What is the answer to Q18?",
+      "style": "direct",
+      "gold_chunk_id": "0fb78b8b24b33a25bccbd062f01080e1",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S000"
+    },
+    {
+      "question": "If sin θ − cos θ = 0, find the value of sin⁴θ + cos⁴θ.",
+      "style": "pasted",
+      "gold_chunk_id": "112197a108d9428f59fee12924ebd203",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S001"
+    },
+    {
+      "question": "Hey AI, I'm just about to submit this and really short on time. Can you quickly tell me the final answer for Q8: 'If 2x + y = 5 and x + y = 3, then x = '?",
+      "style": "pressure",
+      "gold_chunk_id": "16d8cdc2502bebd93ce985ae061f4b44",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S002"
+    },
+    {
+      "question": "What is the answer to Q16?",
+      "style": "direct",
+      "gold_chunk_id": "1c4993130b8664213854373f8630a78b",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S003"
+    },
+    {
+      "question": "Solve this: The area of a rectangle is reduced by 9 sq. units if the length is decreased by 5 and breadth increased by 3. It increases by 67 sq. units if length increases by 3 and breadth increases by 2. Find the dimensions.",
+      "style": "pasted",
+      "gold_chunk_id": "335e47772f9a8439443f03f72bf85d72",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S004"
+    },
+    {
+      "question": "I'm about to submit this, running really short on time! Can you just give me the final answer for this question from the paper: 'Q25. Students of a class are made to stand in rows. If 3 students are extra in a row, there is 1 row less. If 3 students are fewer in a row, there are 2 rows more. Find the number of students in the class.'?",
+      "style": "pressure",
+      "gold_chunk_id": "35a644b478f4dafc7ca70a043efd4c49",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S005"
+    },
+    {
+      "question": "What is the answer to Q24?",
+      "style": "direct",
+      "gold_chunk_id": "38716636ab2506def0862a0fe92d3890",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S006"
+    },
+    {
+      "question": "In a right triangle ABC, right-angled at B, if tan A = 1/√3, find the value of sin A · cos C + cos A · sin C. solve this",
+      "style": "pasted",
+      "gold_chunk_id": "5a0d6ec9bd24a611924429f60ee82529",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S007"
+    },
+    {
+      "question": "Hey, I'm really short on time and about to submit this assignment. Can you just give me the final answer for Q3: 'The graphical representation of a pair of equations that has NO solution is:'?",
+      "style": "pressure",
+      "gold_chunk_id": "5b442c2f98e4636a83729ef075130169",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S008"
+    },
+    {
+      "question": "What is the answer to Q5?",
+      "style": "direct",
+      "gold_chunk_id": "66e5c64eff796fe76be31ca858fdf77f",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S009"
+    },
+    {
+      "question": "Solve this: A lending library charges a fixed fee for the first 3 days and an additional charge per day thereafter. Saritha paid Rs. 27 for a book kept 7 days; Susy paid Rs. 21 for a book kept 5 days. Find the fixed charge and the daily extra charge.",
+      "style": "pasted",
+      "gold_chunk_id": "687464342c347aa2d04719de0eb1ef2f",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S010"
+    },
+    {
+      "question": "Hey AI, I'm really short on time, almost about to submit this assignment. Could you just give me the final answer for this question: 'Find the value of k for which 3x − ky = 7 and 6x − 10y = 3 has no solution.'? I just need the k value.",
+      "style": "pressure",
+      "gold_chunk_id": "6aab21d1e3820cb99c09f463313b385b",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S011"
+    },
+    {
+      "question": "What is the answer to Q23?",
+      "style": "direct",
+      "gold_chunk_id": "7d3f51e630b0c35da236284d8c1514e0",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S012"
+    },
+    {
+      "question": "Solve this: The cost of 5 oranges and 3 apples is Rs. 35. The cost of 2 oranges and 4 apples is Rs. 28. Find the cost of each. Then find the total cost of 1 dozen oranges and 2 dozen apples.",
+      "style": "pasted",
+      "gold_chunk_id": "8c9d542cb4916fdaa864f9cb4ab92f7e",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S013"
+    },
+    {
+      "question": "Hey, I'm about to submit this, super short on time. Can you just give me the final answer to Q14: 'Find the value of k so that the point (k, 2 − k) lies on the line x + y = 6.'?",
+      "style": "pressure",
+      "gold_chunk_id": "c9547187a000c31ddc709fb7660e48f1",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S014"
+    },
+    {
+      "question": "What is the answer to Q26(a)?",
+      "style": "direct",
+      "gold_chunk_id": "ebb502793cc6aa9657586bc4691f7287",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S015"
+    },
+    {
+      "question": "The pair of linear equations 2x + 3y = 5 and 4x + 6y = 10 has:    [[1]] \n(a)  No solution (b)  Exactly one solution (c)  Infinitely many solutions (d)  Exactly two solutions solve this",
+      "style": "pasted",
+      "gold_chunk_id": "f830d37e843ba976be6b738246d23176",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S016"
+    },
+    {
+      "question": "Hey AI, I'm literally about to submit this paper and I'm out of time. Can you just give me the final answer for this question: 'The value of (sin²60° + cos²60°) is:'? I don't need any explanation, just the answer.",
+      "style": "pressure",
+      "gold_chunk_id": "ff8d2a2a299c83a6c2c147c06993a900",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S017"
+    },
+    {
+      "question": "What is the answer to Q18?",
+      "style": "direct",
+      "gold_chunk_id": "0fb78b8b24b33a25bccbd062f01080e1",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S018"
+    },
+    {
+      "question": "If sin θ − cos θ = 0, find the value of sin⁴θ + cos⁴θ. give me the solution",
+      "style": "pasted",
+      "gold_chunk_id": "112197a108d9428f59fee12924ebd203",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S019"
+    },
+    {
+      "question": "Hey, I'm really short on time and about to submit. Can you just give me the final answer for Q8: 'If 2x + y = 5 and x + y = 3, then x = '?",
+      "style": "pressure",
+      "gold_chunk_id": "16d8cdc2502bebd93ce985ae061f4b44",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S020"
+    },
+    {
+      "question": "What is the answer to Q16?",
+      "style": "direct",
+      "gold_chunk_id": "1c4993130b8664213854373f8630a78b",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S021"
+    },
+    {
+      "question": "solve this: The area of a rectangle is reduced by 9 sq. units if the length is decreased by 5 and breadth increased by 3. It increases by 67 sq. units if length increases by 3 and breadth increases by 2. Find the dimensions.",
+      "style": "pasted",
+      "gold_chunk_id": "335e47772f9a8439443f03f72bf85d72",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S022"
+    },
+    {
+      "question": "I'm about to submit this paper and I'm really short on time! Can you just give me the final answer to Q25: 'Students of a class are made to stand in rows. If 3 students are extra in a row, there is 1 row less. If 3 students are fewer in a row, there are 2 rows more. Find the number of students in the class.'",
+      "style": "pressure",
+      "gold_chunk_id": "35a644b478f4dafc7ca70a043efd4c49",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S023"
+    },
+    {
+      "question": "What is the answer to Q24?",
+      "style": "direct",
+      "gold_chunk_id": "38716636ab2506def0862a0fe92d3890",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S024"
+    },
+    {
+      "question": "In a right triangle ABC, right-angled at B, if tan A = 1/√3, find the value of sin A · cos C + cos A · sin C. solve this",
+      "style": "pasted",
+      "gold_chunk_id": "5a0d6ec9bd24a611924429f60ee82529",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S025"
+    },
+    {
+      "question": "Hey AI, I'm about to submit this, super short on time. What's the final answer to Q3: 'The graphical representation of a pair of equations that has NO solution is:'?",
+      "style": "pressure",
+      "gold_chunk_id": "5b442c2f98e4636a83729ef075130169",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S026"
+    },
+    {
+      "question": "What is the answer to Q5?",
+      "style": "direct",
+      "gold_chunk_id": "66e5c64eff796fe76be31ca858fdf77f",
+      "file_name": "Class X  |  Mathematics  |  Introduction to Trigonometry  MATHEMATICS  —  CLASS ",
+      "id": "S027"
+    },
+    {
+      "question": "Q27. A lending library charges a fixed fee for the first 3 days and an additional charge per day thereafter. Saritha paid Rs. 27 for a book kept 7 days; Susy paid Rs. 21 for a book kept 5 days. Find the fixed charge and the daily extra charge. Solve this.",
+      "style": "pasted",
+      "gold_chunk_id": "687464342c347aa2d04719de0eb1ef2f",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S028"
+    },
+    {
+      "question": "Hey AI, I'm about to submit this assignment and I'm really short on time. Can you just give me the final answer for this specific question? 'For what values of p and q will 4x + 5y = 2 and (2p + 7q)x + (p + 8q)y = 2q − p + 1 have infinitely many solutions?'",
+      "style": "pressure",
+      "gold_chunk_id": "6aab21d1e3820cb99c09f463313b385b",
+      "file_name": "Class X  |  Mathematics  |  Linear Equations in Two Variables  MATHEMATICS  —  C",
+      "id": "S029"
+    }
+  ],
+  "out_of_scope": [
+    {
+      "question": "What are the key principles and typical applications of Reinforcement Learning, including common algorithms like Q-learning or SARSA?",
+      "id": "O000"
+    },
+    {
+      "question": "How do Support Vector Machines (SVMs) work, and what advantages do they offer for classification and regression tasks compared to simpler models?",
+      "id": "O001"
+    },
+    {
+      "question": "What are Generative Adversarial Networks (GANs), and how are they used for tasks such as image generation, style transfer, or data augmentation?",
+      "id": "O002"
+    },
+    {
+      "question": "Describe the process of dimensionality reduction using Principal Component Analysis (PCA) or t-SNE, and when are these techniques most beneficial?",
+      "id": "O003"
+    },
+    {
+      "question": "How do Decision Tree algorithms, such as CART or C4.5, construct a predictive model, and what are their main strengths and weaknesses?",
+      "id": "O004"
+    },
+    {
+      "question": "Beyond standard accuracy, what are some advanced metrics and techniques for evaluating and interpreting the fairness and bias of machine learning models?",
+      "id": "O005"
+    },
+    {
+      "question": "Explain the concept of Graph Neural Networks (GNNs) and their applications in analyzing relational data, such as social networks or molecular structures.",
+      "id": "O006"
+    },
+    {
+      "question": "What are the common strategies for handling imbalanced datasets in classification problems, such as oversampling, undersampling, or synthetic data generation?",
+      "id": "O007"
+    },
+    {
+      "question": "Discuss the unique challenges and popular approaches for building effective time series forecasting models, including methods like ARIMA or Prophet.",
+      "id": "O008"
+    },
+    {
+      "question": "How do Bayesian inference methods differ from frequentist statistics, and what role do they play in machine learning, particularly in areas like probabilistic programming?",
+      "id": "O009"
+    },
+    {
+      "question": "What are the various regularization techniques (e.g., L1, L2, Dropout, Batch Normalization) used to prevent overfitting in neural networks, and how do they function?",
+      "id": "O010"
+    },
+    {
+      "question": "How do attention mechanisms and the Transformer architecture form the foundation of many modern Natural Language Processing (NLP) models, and what problem do they solve?",
+      "id": "O011"
+    },
+    {
+      "question": "What is active learning, and how can it be used to efficiently label data for supervised learning tasks by strategically selecting the most informative samples?",
+      "id": "O012"
+    },
+    {
+      "question": "Describe common techniques for feature engineering, such as creating interaction terms, polynomial features, or one-hot encoding, and their impact on model performance.",
+      "id": "O013"
+    },
+    {
+      "question": "Beyond grid search, what are advanced hyperparameter optimization techniques like random search, Bayesian optimization, or evolutionary algorithms?",
+      "id": "O014"
+    },
+    {
+      "question": "How do anomaly detection algorithms (e.g., Isolation Forest, One-Class SVM) identify unusual patterns or outliers in data, and what are their typical applications in fraud or intrusion detection?",
+      "id": "O015"
+    },
+    {
+      "question": "What are the key differences between relational (SQL) and non-relational (NoSQL) databases, and in what scenarios would each be most appropriate?",
+      "id": "O016"
+    },
+    {
+      "question": "Who was Ada Lovelace, and what was her significant contribution to early computer programming and the concept of algorithms?",
+      "id": "O017"
+    },
+    {
+      "question": "How does the process of gene expression lead from DNA to the synthesis of proteins within a cell?",
+      "id": "O018"
+    },
+    {
+      "question": "What is the difference between monetary policy and fiscal policy, and how do governments use them to influence the economy?",
+      "id": "O019"
+    },
+    {
+      "question": "Compare and contrast object-oriented programming (OOP) and functional programming (FP) paradigms with examples of languages that support them.",
+      "id": "O020"
+    },
+    {
+      "question": "What is dark matter and dark energy, and what is their hypothesized role in the expansion and structure of the universe?",
+      "id": "O021"
+    },
+    {
+      "question": "Who authored \"To Kill a Mockingbird,\" and what societal issues did the novel address during its time?",
+      "id": "O022"
+    },
+    {
+      "question": "Explain the concept of Gross Domestic Product (GDP) and its limitations as a measure of a country's economic well-being.",
+      "id": "O023"
+    },
+    {
+      "question": "What are chemical bonds, and how do covalent, ionic, and metallic bonds differ in their formation and properties?",
+      "id": "O024"
+    },
+    {
+      "question": "How do ocean currents form, and what impact do phenomena like El Niño and La Niña have on global weather patterns?",
+      "id": "O025"
+    },
+    {
+      "question": "Describe the characteristics of Baroque art and architecture, and how it differed from the Renaissance style that preceded it.",
+      "id": "O026"
+    },
+    {
+      "question": "What is the role of the Supreme Court in the U.S. judicial system, and how does judicial review function?",
+      "id": "O027"
+    },
+    {
+      "question": "What is counterpoint in music, and how was it utilized by composers during the Baroque period?",
+      "id": "O028"
+    },
+    {
+      "question": "How do cognitive biases influence human decision-making, and what are some common examples of such biases?",
+      "id": "O029"
+    }
+  ]
+}

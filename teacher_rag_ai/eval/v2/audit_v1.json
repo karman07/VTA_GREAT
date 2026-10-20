@@ -1,0 +1,1046 @@
+{
+ "n_checks": 121,
+ "n_match": 121,
+ "mismatches": [],
+ "checks": [
+  {
+   "metric": "n answerable queries in retrieval_raw",
+   "reported": 99,
+   "recomputed": 99,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "MRR dense",
+   "reported": 0.8255170755170755,
+   "recomputed": 0.8255170755170755,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "MRR dense CI low (bootstrap, tol .02)",
+   "reported": 0.7654864117364117,
+   "recomputed": 0.7645737133237133,
+   "tolerance": 0.02,
+   "kind": "bootstrap",
+   "match": true
+  },
+  {
+   "metric": "MRR dense CI high (bootstrap, tol .02)",
+   "reported": 0.8820845358345358,
+   "recomputed": 0.8829244829244829,
+   "tolerance": 0.02,
+   "kind": "bootstrap",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 dense",
+   "reported": 0.7272727272727273,
+   "recomputed": 0.7272727272727273,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 dense exact CI low",
+   "reported": 0.6285285398069604,
+   "recomputed": 0.6285285398069602,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 dense exact CI high",
+   "reported": 0.8119610063013488,
+   "recomputed": 0.8119610063013487,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@3 dense",
+   "reported": 0.898989898989899,
+   "recomputed": 0.898989898989899,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@3 dense exact CI low",
+   "reported": 0.8220754385811502,
+   "recomputed": 0.8220754385811502,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@3 dense exact CI high",
+   "reported": 0.9504891277913371,
+   "recomputed": 0.9504891277913371,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 dense",
+   "reported": 0.9696969696969697,
+   "recomputed": 0.9696969696969697,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 dense exact CI low",
+   "reported": 0.9139887356626205,
+   "recomputed": 0.9139887356626205,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 dense exact CI high",
+   "reported": 0.9937066527258279,
+   "recomputed": 0.9937066527258279,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "MRR rerank",
+   "reported": 0.8963083213083213,
+   "recomputed": 0.8963083213083213,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "MRR rerank CI low (bootstrap, tol .02)",
+   "reported": 0.8430976430976431,
+   "recomputed": 0.8452260702260703,
+   "tolerance": 0.02,
+   "kind": "bootstrap",
+   "match": true
+  },
+  {
+   "metric": "MRR rerank CI high (bootstrap, tol .02)",
+   "reported": 0.9415891053391053,
+   "recomputed": 0.9419191919191919,
+   "tolerance": 0.02,
+   "kind": "bootstrap",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 rerank",
+   "reported": 0.8383838383838383,
+   "recomputed": 0.8383838383838383,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 rerank exact CI low",
+   "reported": 0.7508536586334003,
+   "recomputed": 0.7508536586334003,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 rerank exact CI high",
+   "reported": 0.904705911160838,
+   "recomputed": 0.904705911160838,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@3 rerank",
+   "reported": 0.9393939393939394,
+   "recomputed": 0.9393939393939394,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@3 rerank exact CI low",
+   "reported": 0.8727431591698032,
+   "recomputed": 0.8727431591698032,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@3 rerank exact CI high",
+   "reported": 0.9774362015008554,
+   "recomputed": 0.9774362015008554,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 rerank",
+   "reported": 0.9595959595959596,
+   "recomputed": 0.9595959595959596,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 rerank exact CI low",
+   "reported": 0.8997720934312506,
+   "recomputed": 0.8997720934312505,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 rerank exact CI high",
+   "reported": 0.9888832512014241,
+   "recomputed": 0.9888832512014241,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@20 stage-1",
+   "reported": 0.98989898989899,
+   "recomputed": 0.98989898989899,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "MRR paired t",
+   "reported": 2.3373618649799575,
+   "recomputed": 2.3373618649799575,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "MRR paired p",
+   "reported": 0.021454632850864807,
+   "recomputed": 0.021454632850864807,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "MRR d_z",
+   "reported": 0.23491370622496538,
+   "recomputed": 0.23491370622496538,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 McNemar p",
+   "reported": 0.03468966484069824,
+   "recomputed": 0.03468966484069824,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 McNemar discordant (gained)",
+   "reported": 17.0,
+   "recomputed": 17.0,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "Recall@1 McNemar discordant (lost)",
+   "reported": 6.0,
+   "recomputed": 6.0,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 McNemar p",
+   "reported": 1.0,
+   "recomputed": 1.0,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 McNemar discordant (gained)",
+   "reported": 1.0,
+   "recomputed": 1.0,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "Recall@6 McNemar discordant (lost)",
+   "reported": 2.0,
+   "recomputed": 2.0,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "n queries judged for all four systems",
+   "reported": 99,
+   "recomputed": 99,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "HR llm_only",
+   "reported": 0.36128537567931507,
+   "recomputed": 0.36128537567931507,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "correctness llm_only",
+   "reported": 3.797979797979798,
+   "recomputed": 3.797979797979798,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "answers with >=1 unsupported llm_only",
+   "reported": 0.8484848484848485,
+   "recomputed": 0.8484848484848485,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "HR vanilla_rag",
+   "reported": 0.08776382147594268,
+   "recomputed": 0.08776382147594268,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "correctness vanilla_rag",
+   "reported": 4.616161616161616,
+   "recomputed": 4.616161616161616,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "answers with >=1 unsupported vanilla_rag",
+   "reported": 0.46464646464646464,
+   "recomputed": 0.46464646464646464,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "HR rag_rerank",
+   "reported": 0.07807075079802353,
+   "recomputed": 0.07807075079802353,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "correctness rag_rerank",
+   "reported": 4.7272727272727275,
+   "recomputed": 4.7272727272727275,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "answers with >=1 unsupported rag_rerank",
+   "reported": 0.43434343434343436,
+   "recomputed": 0.43434343434343436,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "HR teachai",
+   "reported": 0.06260950048828837,
+   "recomputed": 0.06260950048828837,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "correctness teachai",
+   "reported": 4.767676767676767,
+   "recomputed": 4.767676767676767,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "answers with >=1 unsupported teachai",
+   "reported": 0.30303030303030304,
+   "recomputed": 0.30303030303030304,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag hallucination_rate t",
+   "reported": -9.007968783860596,
+   "recomputed": -9.007968783860596,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag hallucination_rate p",
+   "reported": 1.71917452159082e-14,
+   "recomputed": 1.71917452159082e-14,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag hallucination_rate d_z",
+   "reported": -0.9053349266454435,
+   "recomputed": -0.9053349266454435,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag correctness t",
+   "reported": 5.130643988590185,
+   "recomputed": 5.130643988590185,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag correctness p",
+   "reported": 1.460105952835499e-06,
+   "recomputed": 1.460105952835499e-06,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag correctness d_z",
+   "reported": 0.5156491225165488,
+   "recomputed": 0.5156491225165488,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->vanilla_rag unsupported-answer McNemar p",
+   "reported": 5.100190492157708e-09,
+   "recomputed": 5.100190492157708e-09,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank hallucination_rate t",
+   "reported": -0.6752083415575646,
+   "recomputed": -0.6752083415575645,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank hallucination_rate p",
+   "reported": 0.5011334291629727,
+   "recomputed": 0.5011334291629727,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank hallucination_rate d_z",
+   "reported": -0.06786099164438104,
+   "recomputed": -0.06786099164438104,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank correctness t",
+   "reported": 1.6932280639641382,
+   "recomputed": 1.6932280639641382,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank correctness p",
+   "reported": 0.09358862906681212,
+   "recomputed": 0.09358862906681212,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank correctness d_z",
+   "reported": 0.17017582341421028,
+   "recomputed": 0.17017582341421028,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->rag_rerank unsupported-answer McNemar p",
+   "reported": 0.735878800856881,
+   "recomputed": 0.735878800856881,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai hallucination_rate t",
+   "reported": -1.3804945011224443,
+   "recomputed": -1.3804945011224443,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai hallucination_rate p",
+   "reported": 0.17057509814695748,
+   "recomputed": 0.17057509814695748,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai hallucination_rate d_z",
+   "reported": -0.13874491773854572,
+   "recomputed": -0.13874491773854572,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai correctness t",
+   "reported": 0.9422750233904904,
+   "recomputed": 0.9422750233904904,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai correctness p",
+   "reported": 0.34836892543096704,
+   "recomputed": 0.34836892543096704,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai correctness d_z",
+   "reported": 0.09470220308817015,
+   "recomputed": 0.09470220308817015,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "rag_rerank->teachai unsupported-answer McNemar p",
+   "reported": 0.029449373483657837,
+   "recomputed": 0.029449373483657837,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai hallucination_rate t",
+   "reported": -2.0274326557723334,
+   "recomputed": -2.0274326557723334,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai hallucination_rate p",
+   "reported": 0.045333352980395286,
+   "recomputed": 0.045333352980395286,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai hallucination_rate d_z",
+   "reported": -0.2037646486942608,
+   "recomputed": -0.2037646486942608,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai correctness t",
+   "reported": 2.398160484396361,
+   "recomputed": 2.398160484396361,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai correctness p",
+   "reported": 0.018370818103517643,
+   "recomputed": 0.018370818103517643,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai correctness d_z",
+   "reported": 0.24102419738786923,
+   "recomputed": 0.24102419738786923,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "vanilla_rag->teachai unsupported-answer McNemar p",
+   "reported": 0.002493917942047119,
+   "recomputed": 0.002493917942047119,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai hallucination_rate t",
+   "reported": -10.374852523493315,
+   "recomputed": -10.374852523493315,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai hallucination_rate p",
+   "reported": 1.8619851502516336e-17,
+   "recomputed": 1.8619851502516336e-17,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai hallucination_rate d_z",
+   "reported": -1.0427119113848244,
+   "recomputed": -1.0427119113848244,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai correctness t",
+   "reported": 6.128367337843327,
+   "recomputed": 6.128367337843327,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai correctness p",
+   "reported": 1.859381859010222e-08,
+   "recomputed": 1.859381859010222e-08,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai correctness d_z",
+   "reported": 0.6159240920331972,
+   "recomputed": 0.6159240920331972,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "llm_only->teachai unsupported-answer McNemar p",
+   "reported": 1.582067810090848e-15,
+   "recomputed": 1.582067810090848e-15,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "kappa llm_only (as reported: j2 zero-claim answers counted as 'no unsupported')",
+   "reported": 0.17385257301808055,
+   "recomputed": 0.17385257301808055,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "kappa vanilla_rag (as reported: j2 zero-claim answers counted as 'no unsupported')",
+   "reported": 0.5428211586901763,
+   "recomputed": 0.5428211586901763,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "kappa rag_rerank (as reported: j2 zero-claim answers counted as 'no unsupported')",
+   "reported": 0.2653862941946749,
+   "recomputed": 0.2653862941946749,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "kappa teachai (as reported: j2 zero-claim answers counted as 'no unsupported')",
+   "reported": 0.3275862068965515,
+   "recomputed": 0.3275862068965515,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "n citations",
+   "reported": 267.0,
+   "recomputed": 267.0,
+   "tolerance": 0,
+   "kind": "count",
+   "match": true
+  },
+  {
+   "metric": "verbatim validity",
+   "reported": 0.8014981273408239,
+   "recomputed": 0.8014981273408239,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "answers with citation block",
+   "reported": 0.6161616161616161,
+   "recomputed": 0.6161616161616161,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "answers with inline marker",
+   "reported": 0.7272727272727273,
+   "recomputed": 0.7272727272727273,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention llm_only",
+   "reported": 0.0,
+   "recomputed": 0.0,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention llm_only exact CI low",
+   "reported": 0.0,
+   "recomputed": 0.0,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention llm_only exact CI high",
+   "reported": 0.11570330822202778,
+   "recomputed": 0.11570330822202779,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention vanilla_rag",
+   "reported": 0.9333333333333333,
+   "recomputed": 0.9333333333333333,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention vanilla_rag exact CI low",
+   "reported": 0.7792645984770381,
+   "recomputed": 0.7792645984770381,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention vanilla_rag exact CI high",
+   "reported": 0.9918218655393437,
+   "recomputed": 0.9918218655393437,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention rag_rerank",
+   "reported": 0.9,
+   "recomputed": 0.9,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention rag_rerank exact CI low",
+   "reported": 0.7347115495257919,
+   "recomputed": 0.7347115495257919,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention rag_rerank exact CI high",
+   "reported": 0.9788828629702774,
+   "recomputed": 0.9788828629702773,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention teachai",
+   "reported": 0.9333333333333333,
+   "recomputed": 0.9333333333333333,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention teachai exact CI low",
+   "reported": 0.7792645984770381,
+   "recomputed": 0.7792645984770381,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "abstention teachai exact CI high",
+   "reported": 0.9918218655393437,
+   "recomputed": 0.9918218655393437,
+   "tolerance": 1e-06,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment no_protocol leaked_final_answer",
+   "reported": 0.8666666666666667,
+   "recomputed": 0.8666666666666667,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment no_protocol full_solution",
+   "reported": 0.8333333333333334,
+   "recomputed": 0.8333333333333334,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment no_protocol guidance",
+   "reported": 0.9666666666666667,
+   "recomputed": 0.9666666666666667,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment teachai leaked_final_answer",
+   "reported": 0.13333333333333333,
+   "recomputed": 0.13333333333333333,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment teachai full_solution",
+   "reported": 0.1,
+   "recomputed": 0.1,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment teachai guidance",
+   "reported": 1.0,
+   "recomputed": 1.0,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment leaked_final_answer McNemar p",
+   "reported": 4.76837158203125e-07,
+   "recomputed": 4.76837158203125e-07,
+   "tolerance": 1e-12,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment full_solution McNemar p",
+   "reported": 2.9802322387695312e-06,
+   "recomputed": 2.9802322387695312e-06,
+   "tolerance": 1e-12,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "assignment guidance McNemar p",
+   "reported": 1.0,
+   "recomputed": 1.0,
+   "tolerance": 1e-12,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "TTFT median c=1",
+   "reported": 3.2143253120593727,
+   "recomputed": 3.2143253120593727,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "TTFT p95 c=1",
+   "reported": 3.8540100315120074,
+   "recomputed": 3.8540100315120074,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "total median c=1",
+   "reported": 5.584204854210839,
+   "recomputed": 5.584204854210839,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "TTFT median c=5",
+   "reported": 3.1749455835670233,
+   "recomputed": 3.1749455835670233,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "TTFT p95 c=5",
+   "reported": 3.8759332271525637,
+   "recomputed": 3.8759332271525637,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "total median c=5",
+   "reported": 5.875147500541061,
+   "recomputed": 5.875147500541061,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "TTFT median c=10",
+   "reported": 3.200986291980371,
+   "recomputed": 3.200986291980371,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "TTFT p95 c=10",
+   "reported": 3.5177693500183524,
+   "recomputed": 3.5177693500183524,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  },
+  {
+   "metric": "total median c=10",
+   "reported": 5.644623916596174,
+   "recomputed": 5.644623916596174,
+   "tolerance": 1e-09,
+   "kind": "exact",
+   "match": true
+  }
+ ],
+ "notes": [
+  {
+   "kappa_excluding_j2_zero_claim_answers": {
+    "llm_only": 0.174
+   },
+   "n_excluded": 0
+  },
+  {
+   "kappa_excluding_j2_zero_claim_answers": {
+    "vanilla_rag": 0.543
+   },
+   "n_excluded": 0
+  },
+  {
+   "kappa_excluding_j2_zero_claim_answers": {
+    "rag_rerank": 0.265
+   },
+   "n_excluded": 0
+  },
+  {
+   "kappa_excluding_j2_zero_claim_answers": {
+    "teachai": 0.328
+   },
+   "n_excluded": 0
+  }
+ ],
+ "integrity": {
+  "n_answerable": 99,
+  "n_out_of_scope": 30,
+  "n_assignment": 30,
+  "duplicate_questions": 0,
+  "gold_chunks_used_more_than_once": 0,
+  "answerable_by_document": {
+   "Partitioning-Based  Clustering Algorithms Dr. JASMEET SINGH ASSISTANT PROFESSOR ": 10,
+   "QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers\u2217 Artidoro Pagnoni\u2217 Ar": 30,
+   "Deep Learning-IV (Activation Functions) DR. JASMEET SINGH, ASSISTANT PROFESSOR, ": 14,
+   "Clustering (Introduction, Evaluation Metrics) Dr. JASMEET SINGH ASSISTANT PROFES": 13,
+   "Hierarchical Clustering Dr. JASMEET SINGH ASSISTANT PROFESSOR CSED, TIET": 9,
+   "Deep Learning-I (Introduction to Deep Learning, Neural Networks,  Logistic Regre": 14,
+   "Deep Learning-II (Shallow Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR": 7,
+   "Deep Learning-III (Deep Neural Networks) DR. JASMEET SINGH ASSISTANT PROFESSOR, ": 2
+  },
+  "answerable_by_type": {
+   "factual": 25,
+   "conceptual": 25,
+   "analytical": 25,
+   "problem_solving": 24
+  },
+  "fraction_of_question_content_words_found_in_gold_chunk": {
+   "mean": 0.5060272454985609,
+   "median": 0.5,
+   "p25": 0.35357142857142854,
+   "p75": 0.6666666666666666
+  },
+  "mean_overlap_when_dense_rank1": 0.5029704930074406,
+  "mean_overlap_when_not_rank1": 0.5141785854748817,
+  "spearman_overlap_vs_reciprocal_dense_rank": {
+   "rho": -0.01877064211534164,
+   "p": 0.8536919833574728
+  },
+  "judge2_answers_with_zero_claims": {},
+  "stored_fields_missing": [
+   "retrieved context per answer (answerable/oos/assignment)",
+   "model citation list (only counts stored)",
+   "judge claim-level labels (only counts stored)",
+   "candidate passages in retrieval_raw (count only)",
+   "token usage / cost",
+   "raw generation text before citation-block removal"
+  ],
+  "benchmark_question_writer_equals_primary_judge": "gen_queries.py uses JUDGE_MODEL (gemini-2.5-flash) to write questions and eval_generation.py uses the same model as judge 1"
+ }
+}

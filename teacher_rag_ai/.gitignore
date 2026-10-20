@@ -1,0 +1,15 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+chroma_db/
+.DS_Store
+qdrant_data/
+*.bin
+query_out*.json
