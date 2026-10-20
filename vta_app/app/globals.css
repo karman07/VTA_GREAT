@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/* VTA design tokens — warm cream surfaces, deep forest-green brand. Light theme only. */
+@theme {
+  --color-cream-50: #fdfbf4;
+  --color-cream-100: #faf6ec;
+  --color-cream-200: #f3ecdb;
+  --color-cream-300: #e9dfc6;
+  --color-cream-400: #d9cba9;
+
+  --color-forest-50: #eef4ec;
+  --color-forest-100: #dce9de;
+  --color-forest-200: #b8d2bf;
+  --color-forest-300: #8bb59a;
+  --color-forest-500: #2f7a57;
+  --color-forest-600: #236548;
+  --color-forest-700: #1a5139;
+  --color-forest-800: #133d2b;
+  --color-forest-900: #0d2a1e;
+
+  --color-ink: #1b2a21;
+  --color-ink-soft: #3d4f44;
+  --color-ink-muted: #6a7a70;
+
+  --color-gold-100: #f6ebd0;
+  --color-gold-600: #a97a1f;
+  --color-danger-100: #f7e1dc;
+  --color-danger-600: #a53a2b;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --shadow-card: 0 1px 0 rgba(27, 42, 33, 0.04), 0 8px 24px -12px rgba(27, 42, 33, 0.18);
+  --shadow-lift: 0 1px 0 rgba(27, 42, 33, 0.05), 0 18px 40px -16px rgba(19, 61, 43, 0.35);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-cream-100);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream-100);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-forest-200);
+  color: var(--color-forest-900);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-forest-500);
+  outline-offset: 2px;
+}
+
+.font-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+}
+
+/* subtle paper grain on cream sections */
+.grain {
+  background-image: radial-gradient(rgba(27, 42, 33, 0.045) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* ── Motion system ─────────────────────────────────────────────────────────
+   Easing is a soft "out-expo"-ish curve. Everything is disabled under reduced motion (bottom). */
+:root {
+  --ease-out: cubic-bezier(0.22, 0.8, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* "backwards" (not "both"): a lingering transform would trap position:fixed descendants. */
+.rise { animation: rise 0.5s var(--ease-out) backwards; }
+
+/* Staggered entrance: set style={{ "--i": index }} on each item. */
+.stagger { animation: rise 0.55s var(--ease-out) backwards; animation-delay: calc(var(--i, 0) * 70ms); }
+
+@keyframes pop { 0% { opacity: 0; transform: scale(0.92); } 60% { transform: scale(1.02); } 100% { opacity: 1; transform: scale(1); } }
+.pop { animation: pop 0.4s var(--ease-spring) backwards; }
+
+@keyframes slide-in-right { from { opacity: 0; transform: translateX(18px) scale(0.98); } to { opacity: 1; transform: none; } }
+@keyframes slide-in-left { from { opacity: 0; transform: translateX(-18px) scale(0.98); } to { opacity: 1; transform: none; } }
+.msg-user { animation: slide-in-right 0.4s var(--ease-out) backwards; transform-origin: right bottom; }
+.msg-bot { animation: slide-in-left 0.45s var(--ease-out) backwards; transform-origin: left bottom; }
+
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-6px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(2px); } }
+.shake { animation: shake 0.45s var(--ease-out); }
+
+@keyframes shimmer { from { background-position: -240% 0; } to { background-position: 240% 0; } }
+.skeleton {
+  border-radius: 0.75rem;
+  background: linear-gradient(100deg, var(--color-cream-200) 30%, var(--color-cream-50) 50%, var(--color-cream-200) 70%);
+  background-size: 240% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes float-slow { 0%, 100% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(18px, -22px, 0) scale(1.06); } }
+@keyframes float-slow-2 { 0%, 100% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(-24px, 16px, 0) scale(1.08); } }
+.float-a { animation: float-slow 14s ease-in-out infinite; }
+.float-b { animation: float-slow-2 18s ease-in-out infinite; }
+
+@keyframes caret { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.caret::after { content: ""; display: inline-block; width: 2px; height: 1.05em; margin-left: 2px; vertical-align: -0.15em; background: var(--color-forest-600); animation: caret 1s steps(1) infinite; }
+
+@keyframes blink { 0%, 80%, 100% { opacity: 0.25; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
+.dot { animation: blink 1.2s infinite both; }
+.dot:nth-child(2) { animation-delay: 0.15s; }
+.dot:nth-child(3) { animation-delay: 0.3s; }
+
+/* Blinking caret at the end of text that is still streaming in */
+.streaming-caret > div > p:last-child::after,
+.streaming-caret > div > h4:last-child::after,
+.streaming-caret > div > :is(ul, ol):last-child > li:last-child::after {
+  content: ""; display: inline-block; width: 2px; height: 1.05em; margin-left: 3px; vertical-align: -0.15em;
+  background: var(--color-forest-600); animation: caret 0.9s steps(1) infinite;
+}
+
+/* Scroll reveal (see <Reveal/>) */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); transition-delay: var(--d, 0ms); }
+.reveal.in { opacity: 1; transform: none; }
+
+/* Highlight sweep in the document viewer */
+@keyframes mark-sweep { from { background-size: 0% 100%; } to { background-size: 100% 100%; } }
+mark[data-hl] {
+  background-image: linear-gradient(var(--color-gold-100), var(--color-gold-100));
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: mark-sweep 0.9s var(--ease-out) 0.35s backwards;
+}
+
+/* Smooth open/close for expandable panels: wrap content in an inner div with min-height:0 */
+.expand { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s var(--ease-out); }
+.expand.open { grid-template-rows: 1fr; }
+.expand > div { overflow: hidden; min-height: 0; }
+
+/* Pulse ring for "live" things (e.g. processing) */
+@keyframes ring { 0% { box-shadow: 0 0 0 0 rgba(169, 122, 31, 0.45); } 100% { box-shadow: 0 0 0 10px rgba(169, 122, 31, 0); } }
+.ring { animation: ring 1.6s ease-out infinite; }
+
+/* Gentle logo wiggle on hover */
+.logo-hover:hover svg { transform: rotate(-6deg) scale(1.06); }
+.logo-hover svg { transition: transform 0.35s var(--ease-spring); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .skeleton { animation: none; }
+}
